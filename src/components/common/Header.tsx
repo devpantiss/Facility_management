@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 
 const Header: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleDropdown = (menu: string) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -19,8 +24,8 @@ const Header: React.FC = () => {
         />
       </div>
 
-      {/* Navigation Menu */}
-      <nav className="flex items-center space-x-6">
+      {/* Desktop Navigation Menu */}
+      <nav className="hidden md:flex items-center space-x-6">
         {/* Company Dropdown */}
         <div className="relative">
           <button
@@ -30,16 +35,22 @@ const Header: React.FC = () => {
             Sectors <FaChevronDown className="ml-1" />
           </button>
           {activeDropdown === "sector" && (
-            <div
-            className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-white shadow-lg rounded-md z-50"
-          >
+            <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-white shadow-lg rounded-md z-50">
               <ul className="p-4 grid grid-cols-5 gap-4">
                 <li className="flex items-center flex-col hover:text-green-600">
-                  <img src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/healthcare.png?fit=100%2C100&ssl=1" alt="SMC" className="w-12 h-12" />
+                  <img
+                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/healthcare.png?fit=100%2C100&ssl=1"
+                    alt="SMC"
+                    className="w-12 h-12"
+                  />
                   <span>Healthcare</span>
                 </li>
                 <li className="flex items-center flex-col hover:text-green-600">
-                  <img src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/manufacturing-1.png?fit=100%2C100&ssl=1" alt="SIS" className="w-12 h-12" />
+                  <img
+                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/manufacturing-1.png?fit=100%2C100&ssl=1"
+                    alt="SIS"
+                    className="w-12 h-12"
+                  />
                   <span>Manufacturing</span>
                 </li>
                 <li className="flex items-center flex-col hover:text-green-600">
@@ -70,7 +81,7 @@ const Header: React.FC = () => {
             </div>
           )}
         </div>
-        
+
         {/* Solutions Dropdown */}
         <div className="relative">
           <button
@@ -80,9 +91,7 @@ const Header: React.FC = () => {
             Solutions <FaChevronDown className="ml-1" />
           </button>
           {activeDropdown === "solutions" && (
-            <div
-              className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] bg-white shadow-lg rounded-md z-50"
-            >
+            <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] bg-white shadow-lg rounded-md z-50">
               <ul className="p-4 grid grid-cols-4 gap-4">
                 <li className="flex items-center hover:text-green-600 flex-col">
                   <img
@@ -90,7 +99,9 @@ const Header: React.FC = () => {
                     alt="CMMS"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">Computerised Maintenance Management System</span>
+                  <span className="text-[14px]">
+                    Computerised Maintenance Management System
+                  </span>
                 </li>
                 <li className="flex items-center hover:text-green-600 flex-col">
                   <img
@@ -106,7 +117,9 @@ const Header: React.FC = () => {
                     alt="Hospital Operations"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">Uberizing Hospital Operation</span>
+                  <span className="text-[14px]">
+                    Uberizing Hospital Operation
+                  </span>
                 </li>
                 <li className="flex items-center hover:text-green-600 flex-col">
                   <img
@@ -114,7 +127,9 @@ const Header: React.FC = () => {
                     alt="Disinfection"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">Next Generation Disinfection System</span>
+                  <span className="text-[14px]">
+                    Next Generation Disinfection System
+                  </span>
                 </li>
                 <li className="flex items-center hover:text-green-600 flex-col">
                   <img
@@ -122,7 +137,9 @@ const Header: React.FC = () => {
                     alt="Surface Disinfection"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">Smart Surface Disinfection Program</span>
+                  <span className="text-[14px]">
+                    Smart Surface Disinfection Program
+                  </span>
                 </li>
                 <li className="flex items-center hover:text-green-600 flex-col">
                   <img
@@ -130,7 +147,9 @@ const Header: React.FC = () => {
                     alt="Facility Management"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">Integrated Facility Management</span>
+                  <span className="text-[14px]">
+                    Integrated Facility Management
+                  </span>
                 </li>
               </ul>
             </div>
@@ -146,16 +165,22 @@ const Header: React.FC = () => {
             Company <FaChevronDown className="ml-1" />
           </button>
           {activeDropdown === "company" && (
-            <div
-            className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-white shadow-lg rounded-md z-50"
-          >
+            <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-white shadow-lg rounded-md z-50">
               <ul className="p-4 grid grid-cols-4 gap-4">
                 <li className="flex items-center flex-col hover:text-green-600">
-                  <img src="https://i0.wp.com/smc-india.com/wp-content/uploads/2024/04/SMC-Logo.png?fit=365%2C195&ssl=1" alt="SMC" className="w-12 h-12" />
+                  <img
+                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2024/04/SMC-Logo.png?fit=365%2C195&ssl=1"
+                    alt="SMC"
+                    className="w-12 h-12"
+                  />
                   <span>About SMC India</span>
                 </li>
                 <li className="flex items-center flex-col hover:text-green-600">
-                  <img src="https://i0.wp.com/smc-india.com/wp-content/uploads/2024/04/sis-enterprise.png?fit=600%2C191&ssl=1" alt="SIS" className="w-12 h-12" />
+                  <img
+                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2024/04/sis-enterprise.png?fit=600%2C191&ssl=1"
+                    alt="SIS"
+                    className="w-12 h-12"
+                  />
                   <span>About SIS Group</span>
                 </li>
                 <li className="flex items-center flex-col hover:text-green-600">
@@ -215,6 +240,66 @@ const Header: React.FC = () => {
           Free Assessment
         </a>
       </nav>
+
+      {/* Hamburger Menu for Mobile */}
+      <div className="md:hidden">
+        <button
+          onClick={toggleMobileMenu}
+          className="text-gray-700 hover:text-green-600 focus:outline-none"
+        >
+          {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg z-50 flex flex-col p-6 overflow-y-auto">
+          <button
+            onClick={toggleMobileMenu}
+            className="self-end text-gray-700 hover:text-green-600 focus:outline-none mb-6"
+          >
+            <FaTimes size={24} />
+          </button>
+          <nav className="flex flex-col space-y-4">
+            <a
+              href="/sectors"
+              className="text-gray-700 hover:text-green-600 font-medium"
+            >
+              Sectors
+            </a>
+            <a
+              href="/solutions"
+              className="text-gray-700 hover:text-green-600 font-medium"
+            >
+              Solutions
+            </a>
+            <a
+              href="/blog"
+              className="text-gray-700 hover:text-green-600 font-medium"
+            >
+              Blog
+            </a>
+            <a
+              href="/careers"
+              className="text-gray-700 hover:text-green-600 font-medium"
+            >
+              Careers
+            </a>
+            <a
+              href="/contact"
+              className="text-gray-700 hover:text-green-600 font-medium"
+            >
+              Contact Us
+            </a>
+            <a
+              href="/free-assessment"
+              className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700"
+            >
+              Free Assessment
+            </a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
