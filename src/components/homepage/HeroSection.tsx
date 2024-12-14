@@ -11,7 +11,7 @@ interface Slide {
 
 const HeroSection: React.FC = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -56,7 +56,7 @@ const HeroSection: React.FC = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className="relative h-screen flex items-center justify-center text-white"
+          className="relative h-[80vh] flex items-center justify-center text-white"
         >
           {/* Background Video */}
           <video
@@ -78,7 +78,7 @@ const HeroSection: React.FC = () => {
             <p className="text-lg md:text-xl  max-wmb-8 drop-shadow-lg">
               {slide.description}
             </p>
-            <button className="bg-green-500 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-green-600 transition">
+            <button className="bg-green-500 mt-4  text-white px-8 py-3 rounded-lg shadow-lg hover:bg-green-600 transition">
               Book a Free Consultation
             </button>
           </div>

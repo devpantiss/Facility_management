@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 const Header: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -26,7 +28,96 @@ const Header: React.FC = () => {
 
       {/* Desktop Navigation Menu */}
       <nav className="hidden md:flex items-center space-x-6">
-        {/* Company Dropdown */}
+        {/* Solutions Dropdown */}
+        <div className="relative">
+          <button
+            onClick={() => toggleDropdown("solutions")}
+            className="flex items-center text-gray-700 hover:text-green-600 font-medium"
+          >
+            Solutions <FaChevronDown className="ml-1" />
+          </button>
+          {activeDropdown === "solutions" && (
+            <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] bg-white shadow-lg rounded-md z-50">
+              <ul className="p-4 grid grid-cols-4 gap-4">
+                <Link to="/solutions/computerised-management-system">
+                <li className="flex items-center hover:text-green-600 flex-col">
+                  <img
+                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/computerized.png?fit=100%2C100&ssl=1"
+                    alt="CMMS"
+                    className="w-12 h-12"
+                  />
+                  <span className="text-[14px]">
+                    Computerised Maintenance Management System
+                  </span>
+                </li>
+                </Link>
+                
+                <Link to="/solutions/indoor-air-quality">
+                <li className="flex items-center hover:text-green-600 flex-col">
+                  <img
+                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/Indoor-air-quality.png?fit=100%2C100&ssl=1"
+                    alt="IAQ"
+                    className="w-12 h-12"
+                  />
+                  <span className="text-[14px]">Indoor Air Quality</span>
+                </li>
+                </Link>
+                
+                <Link to="/solutions/staffing-and-payrolling">
+                <li className="flex items-center hover:text-green-600 flex-col">
+                  <img
+                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/hospital-operations.png?fit=100%2C100&ssl=1"
+                    alt="Hospital Operations"
+                    className="w-12 h-12"
+                  />
+                  <span className="text-[14px]">Staffing & Payrolling </span>
+                </li>
+                </Link>
+                
+                <Link to="/solutions/nex-gen-disinfection-system">
+                <li className="flex items-center hover:text-green-600 flex-col">
+                  <img
+                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/surface-disinfection.png?fit=100%2C100&ssl=1"
+                    alt="Disinfection"
+                    className="w-12 h-12"
+                  />
+                  <span className="text-[14px]">
+                    Next Generation Disinfection System
+                  </span>
+                </li>
+                </Link>
+                
+                <Link to="/solutions/smart-surface-disinfection-program">
+                <li className="flex items-center hover:text-green-600 flex-col">
+                  <img
+                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/next-gen-disinfection.png?fit=100%2C100&ssl=1"
+                    alt="Surface Disinfection"
+                    className="w-12 h-12"
+                  />
+                  <span className="text-[14px]">
+                    Smart Surface Disinfection Program
+                  </span>
+                </li>
+                </Link>
+                
+                <Link to="/solutions/integrated-facility-management">
+                <li className="flex items-center hover:text-green-600 flex-col">
+                  <img
+                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/Ultraviolet.png?fit=100%2C100&ssl=1"
+                    alt="Facility Management"
+                    className="w-12 h-12"
+                  />
+                  <span className="text-[14px]">
+                    Integrated Facility Management
+                  </span>
+                </li>
+                </Link>
+              </ul>
+            </div>
+          )}
+        </div>
+
+        {/* Sectors Dropdown */}
         <div className="relative">
           <button
             onClick={() => toggleDropdown("sector")}
@@ -51,7 +142,7 @@ const Header: React.FC = () => {
                     alt="SIS"
                     className="w-12 h-12"
                   />
-                  <span>Manufacturing</span>
+                  <span>Religious/Tourist</span>
                 </li>
                 <li className="flex items-center flex-col hover:text-green-600">
                   <img
@@ -59,7 +150,7 @@ const Header: React.FC = () => {
                     alt="center"
                     className="w-12 h-12"
                   />
-                  <span>Retail</span>
+                  <span>Public Transport</span>
                 </li>
                 <li className="flex items-center flex-col hover:text-green-600">
                   <img
@@ -76,80 +167,6 @@ const Header: React.FC = () => {
                     className="w-12 h-12"
                   />
                   <span>Residential</span>
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
-
-        {/* Solutions Dropdown */}
-        <div className="relative">
-          <button
-            onClick={() => toggleDropdown("solutions")}
-            className="flex items-center text-gray-700 hover:text-green-600 font-medium"
-          >
-            Solutions <FaChevronDown className="ml-1" />
-          </button>
-          {activeDropdown === "solutions" && (
-            <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] bg-white shadow-lg rounded-md z-50">
-              <ul className="p-4 grid grid-cols-4 gap-4">
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/computerized.png?fit=100%2C100&ssl=1"
-                    alt="CMMS"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-[14px]">
-                    Computerised Maintenance Management System
-                  </span>
-                </li>
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/Indoor-air-quality.png?fit=100%2C100&ssl=1"
-                    alt="IAQ"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-[14px]">Indoor Air Quality</span>
-                </li>
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/hospital-operations.png?fit=100%2C100&ssl=1"
-                    alt="Hospital Operations"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-[14px]">
-                    Uberizing Hospital Operation
-                  </span>
-                </li>
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/surface-disinfection.png?fit=100%2C100&ssl=1"
-                    alt="Disinfection"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-[14px]">
-                    Next Generation Disinfection System
-                  </span>
-                </li>
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/next-gen-disinfection.png?fit=100%2C100&ssl=1"
-                    alt="Surface Disinfection"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-[14px]">
-                    Smart Surface Disinfection Program
-                  </span>
-                </li>
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/Ultraviolet.png?fit=100%2C100&ssl=1"
-                    alt="Facility Management"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-[14px]">
-                    Integrated Facility Management
-                  </span>
                 </li>
               </ul>
             </div>
