@@ -46,7 +46,7 @@ const Header: React.FC = () => {
                     alt="CMMS"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">
+                  <span className="text-center text-[14px]">
                     Computerised Maintenance Management System
                   </span>
                 </li>
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
                     alt="IAQ"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">Indoor Air Quality</span>
+                  <span className="text-center text-[14px]">Indoor Air Quality</span>
                 </li>
                 </Link>
                 
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
                     alt="Hospital Operations"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">Staffing & Payrolling </span>
+                  <span className="text-center text-[14px]">Staffing & Payrolling </span>
                 </li>
                 </Link>
                 
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
                     alt="Disinfection"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">
+                  <span className="text-center text-[14px]">
                     Next Generation Disinfection System
                   </span>
                 </li>
@@ -94,7 +94,7 @@ const Header: React.FC = () => {
                     alt="Surface Disinfection"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">
+                  <span className="text-center text-[14px]">
                     Smart Surface Disinfection Program
                   </span>
                 </li>
@@ -107,7 +107,7 @@ const Header: React.FC = () => {
                     alt="Facility Management"
                     className="w-12 h-12"
                   />
-                  <span className="text-[14px]">
+                  <span className="text-center text-[14px]">
                     Integrated Facility Management
                   </span>
                 </li>
