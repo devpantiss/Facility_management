@@ -3,7 +3,7 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import ComputerisedManagementSystem from "./pages/Solutions/ComputerisedManagementSystem";
+import ComputerisedManagementSystem from "./pages/Solutions/AiEnabledIotMaintenance";
 import IndoorAirQuality from "./pages/Solutions/IndoorAirQuality";
 import IntegratedFacilityManagement from "./pages/Solutions/IntegratedFacilityManagement";
 import NexGenDisinfectionSystem from "./pages/Solutions/NexGenDisinfectionSystem";
@@ -14,6 +14,7 @@ import Educational from "./pages/Sectors/Educational";
 import PublicTransportHub from "./pages/Sectors/PublicTransportHub";
 import Religious from "./pages/Sectors/Religious";
 import Residential from "./pages/Sectors/Residential";
+import EnergyAudit from "./pages/Solutions/EnergyAudit";
 
 function App() {
   return (
@@ -24,10 +25,11 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/solutions/*">
             <Route
-              path="computerised-management-system"
+              path="ai-anabled-iot-management-system"
               element={<ComputerisedManagementSystem />}
             />
             <Route path="indoor-air-quality" element={<IndoorAirQuality />} />
+            <Route path="energy-audit" element={<EnergyAudit />} />
             <Route
               path="integrated-facility-management"
               element={<IntegratedFacilityManagement />}

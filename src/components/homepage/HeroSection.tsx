@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
       title: "Transforming the Private Security Sector a Step at a Time!",
       description: "Elevating safety and security with cutting-edge solutions.",
       videoSrc:
-        "https://smc-india.com/wp-content/uploads/2024/01/Manufacturing.mp4",
+        "https://smc-india.com/wp-content/uploads/2024/01/Education.mp4",
     },
     {
       title: "Helping People Find the Best-Suited Job.",

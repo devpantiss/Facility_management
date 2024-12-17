@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-
 const Header: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,78 +38,82 @@ const Header: React.FC = () => {
           {activeDropdown === "solutions" && (
             <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] bg-white shadow-lg rounded-md z-50">
               <ul className="p-4 grid grid-cols-4 gap-4">
-                <Link to="/solutions/computerised-management-system">
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/computerized.png?fit=100%2C100&ssl=1"
-                    alt="CMMS"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-center text-[14px]">
-                    Computerised Maintenance Management System
-                  </span>
-                </li>
+                <Link to="/solutions/ai-anabled-iot-management-system">
+                  <li className="flex items-center hover:text-green-600 flex-col">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/computerized.png?fit=100%2C100&ssl=1"
+                      alt="AIMMS"
+                      className="w-12 h-12"
+                    />
+                    <span className="text-center text-[14px]">
+                      AI-enabled IoT Maintenance System{" "}
+                    </span>
+                  </li>
                 </Link>
-                
-                <Link to="/solutions/indoor-air-quality">
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/Indoor-air-quality.png?fit=100%2C100&ssl=1"
-                    alt="IAQ"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-center text-[14px]">Indoor Air Quality</span>
-                </li>
+
+                <Link to="/solutions/energy-audit">
+                  <li className="flex items-center hover:text-green-600 flex-col">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/Indoor-air-quality.png?fit=100%2C100&ssl=1"
+                      alt="IAQ"
+                      className="w-12 h-12"
+                    />
+                    <span className="text-center text-[14px]">
+                      Energy Audit & Maintenance{" "}
+                    </span>
+                  </li>
                 </Link>
-                
+
                 <Link to="/solutions/staffing-and-payrolling">
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/hospital-operations.png?fit=100%2C100&ssl=1"
-                    alt="Hospital Operations"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-center text-[14px]">Staffing & Payrolling </span>
-                </li>
+                  <li className="flex items-center hover:text-green-600 flex-col">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/hospital-operations.png?fit=100%2C100&ssl=1"
+                      alt="Hospital Operations"
+                      className="w-12 h-12"
+                    />
+                    <span className="text-center text-[14px]">
+                      Staffing & Payrolling{" "}
+                    </span>
+                  </li>
                 </Link>
-                
+
                 <Link to="/solutions/nex-gen-disinfection-system">
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/surface-disinfection.png?fit=100%2C100&ssl=1"
-                    alt="Disinfection"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-center text-[14px]">
-                    Next Generation Disinfection System
-                  </span>
-                </li>
+                  <li className="flex items-center hover:text-green-600 flex-col">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/surface-disinfection.png?fit=100%2C100&ssl=1"
+                      alt="Disinfection"
+                      className="w-12 h-12"
+                    />
+                    <span className="text-center text-[14px]">
+                      Next Generation Disinfection System
+                    </span>
+                  </li>
                 </Link>
-                
+
                 <Link to="/solutions/smart-surface-disinfection-program">
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/next-gen-disinfection.png?fit=100%2C100&ssl=1"
-                    alt="Surface Disinfection"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-center text-[14px]">
-                    Smart Surface Disinfection Program
-                  </span>
-                </li>
+                  <li className="flex items-center hover:text-green-600 flex-col">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/next-gen-disinfection.png?fit=100%2C100&ssl=1"
+                      alt="Surface Disinfection"
+                      className="w-12 h-12"
+                    />
+                    <span className="text-center text-[14px]">
+                      Nano-Tech Cleaning System{" "}
+                    </span>
+                  </li>
                 </Link>
-                
+
                 <Link to="/solutions/integrated-facility-management">
-                <li className="flex items-center hover:text-green-600 flex-col">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/Ultraviolet.png?fit=100%2C100&ssl=1"
-                    alt="Facility Management"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-center text-[14px]">
-                    Integrated Facility Management
-                  </span>
-                </li>
+                  <li className="flex items-center hover:text-green-600 flex-col">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/Ultraviolet.png?fit=100%2C100&ssl=1"
+                      alt="Facility Management"
+                      className="w-12 h-12"
+                    />
+                    <span className="text-center text-[14px]">
+                      Safely Managed Sanitation(Collection-Segregation-Disposal){" "}
+                    </span>
+                  </li>
                 </Link>
               </ul>
             </div>
@@ -128,46 +131,60 @@ const Header: React.FC = () => {
           {activeDropdown === "sector" && (
             <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-white shadow-lg rounded-md z-50">
               <ul className="p-4 grid grid-cols-5 gap-4">
-                <li className="flex items-center flex-col hover:text-green-600">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/healthcare.png?fit=100%2C100&ssl=1"
-                    alt="SMC"
-                    className="w-12 h-12"
-                  />
-                  <span>Healthcare</span>
-                </li>
-                <li className="flex items-center flex-col hover:text-green-600">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/manufacturing-1.png?fit=100%2C100&ssl=1"
-                    alt="SIS"
-                    className="w-12 h-12"
-                  />
-                  <span>Religious/Tourist</span>
-                </li>
-                <li className="flex items-center flex-col hover:text-green-600">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/retail.png?fit=100%2C100&ssl=1"
-                    alt="center"
-                    className="w-12 h-12"
-                  />
-                  <span>Public Transport</span>
-                </li>
-                <li className="flex items-center flex-col hover:text-green-600">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/education.png?fit=100%2C100&ssl=1"
-                    alt="Learning"
-                    className="w-12 h-12"
-                  />
-                  <span>Educational</span>
-                </li>
-                <li className="flex items-center flex-col hover:text-green-600">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/residential.png?fit=100%2C100&ssl=1"
-                    alt="Learning"
-                    className="w-12 h-12"
-                  />
-                  <span>Residential</span>
-                </li>
+                <Link to="/sectors/healthcare-sector">
+                  <li className="flex items-center flex-col hover:text-green-600">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/healthcare.png?fit=100%2C100&ssl=1"
+                      alt="SMC"
+                      className="w-12 h-12"
+                    />
+                    <span>Healthcare</span>
+                  </li>
+                </Link>
+
+                <Link to="/sectors/religious-and-tourist-spots">
+                  <li className="flex items-center flex-col hover:text-green-600">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/manufacturing-1.png?fit=100%2C100&ssl=1"
+                      alt="SIS"
+                      className="w-12 h-12"
+                    />
+                    <span>Religious/Tourist</span>
+                  </li>
+                </Link>
+
+                <Link to="/sectors/public-transport-hub">
+                  <li className="flex items-center flex-col hover:text-green-600">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/retail.png?fit=100%2C100&ssl=1"
+                      alt="center"
+                      className="w-12 h-12"
+                    />
+                    <span>Public Transport</span>
+                  </li>
+                </Link>
+
+                <Link to="/sectors/educational-sector">
+                  <li className="flex items-center flex-col hover:text-green-600">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/education.png?fit=100%2C100&ssl=1"
+                      alt="Learning"
+                      className="w-12 h-12"
+                    />
+                    <span>Educational</span>
+                  </li>
+                </Link>
+
+                <Link to="/sectors/residential-sector">
+                  <li className="flex items-center flex-col hover:text-green-600">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/residential.png?fit=100%2C100&ssl=1"
+                      alt="Learning"
+                      className="w-12 h-12"
+                    />
+                    <span>Residential</span>
+                  </li>
+                </Link>
               </ul>
             </div>
           )}
