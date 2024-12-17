@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white mx-auto flex justify-between items-center shadow-md fixed top-0 w-full z-50 px-6 py-4">
+    <header className="bg-white mx-auto flex justify-between items-center shadow-md fixed top-0 w-full z-50 px-12 py-4">
       {/* Logo */}
       <div className="flex items-center">
         <img
@@ -162,7 +162,7 @@ const Header: React.FC = () => {
                       alt="SIS"
                       className="w-12 h-12"
                     />
-                    <span>Religious/Tourist</span>
+                    <span>Holistic</span>
                   </li>
                 </Link>
 
