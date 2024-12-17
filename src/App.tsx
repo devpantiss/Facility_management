@@ -15,6 +15,7 @@ import PublicTransportHub from "./pages/Sectors/PublicTransportHub";
 import Religious from "./pages/Sectors/Religious";
 import Residential from "./pages/Sectors/Residential";
 import EnergyAudit from "./pages/Solutions/EnergyAudit";
+import Skilling from "./pages/Solutions/Skilling";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               element={<ComputerisedManagementSystem />}
             />
             <Route path="indoor-air-quality" element={<IndoorAirQuality />} />
+            <Route path="skilling" element={<Skilling />} />
             <Route path="energy-audit" element={<EnergyAudit />} />
             <Route
               path="integrated-facility-management"
@@ -47,6 +49,7 @@ function App() {
               element={<SmartSurfaceDisinfectionProgram />}
             />
           </Route>
+
           <Route path="/sectors/*">
             <Route path="healthcare-sector" element={<HealthCare />} />
             <Route path="educational-sector" element={<Educational />} />

@@ -115,6 +115,19 @@ const Header: React.FC = () => {
                     </span>
                   </li>
                 </Link>
+
+                <Link to="/solutions/skilling">
+                  <li className="flex items-center hover:text-green-600 flex-col">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/LD.png?fit=100%2C100&ssl=1"
+                      alt="Learning"
+                      className="w-12 h-12"
+                    />
+                    <span className="text-center text-[14px]">
+                      NSQF-Industry Linked Skilling{" "}
+                    </span>
+                  </li>
+                </Link>
               </ul>
             </div>
           )}
@@ -224,14 +237,6 @@ const Header: React.FC = () => {
                     className="w-12 h-12"
                   />
                   <span>Centre Of Excellence</span>
-                </li>
-                <li className="flex items-center flex-col hover:text-green-600">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/LD.png?fit=100%2C100&ssl=1"
-                    alt="Learning"
-                    className="w-12 h-12"
-                  />
-                  <span>Learning & Development</span>
                 </li>
                 <li className="flex items-center flex-col hover:text-green-600">
                   <img
