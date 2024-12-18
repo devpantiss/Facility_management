@@ -7,6 +7,7 @@ import PorterSection from '../../components/HealthCareSector/PorterSection'
 import IQMSSection from '../../components/HealthCareSector/IQMSSection'
 import SSDPSection from '../../components/HealthCareSector/SSDPSection'
 import CMMSSection from '../../components/HealthCareSector/CMMSSection'
+import Testimonials from '../../components/HealthCareSector/Testimonials'
 
 const HealthCare:React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const HealthCare:React.FC = () => {
       <IQMSSection />
       <SSDPSection />
       <CMMSSection />
+      <Testimonials />
     </div>
   )
 }

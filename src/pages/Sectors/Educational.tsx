@@ -3,6 +3,7 @@ import Hero from '../../components/EducationSector/Hero'
 import Challenges from '../../components/EducationSector/Challenges'
 import InnovativeSolutions from '../../components/EducationSector/InnovativeSolutions'
 import OurSolutions from '../../components/EducationSector/OurSolutions'
+import Testimonials from '../../components/EducationSector/Testimonials'
 
 const Educational: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Educational: React.FC = () => {
       <Challenges />
       <InnovativeSolutions />
       <OurSolutions />
+      <Testimonials />
     </div>
   )
 }
