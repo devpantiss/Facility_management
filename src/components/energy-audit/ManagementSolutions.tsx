@@ -21,23 +21,23 @@ const ManagementSolutions: React.FC = () => {
   ];
 
   return (
-    <section className="w-full py-16 bg-white text-center">
+    <section className="w-full py-16 bg-black border-b-2 border-green-600 text-center">
       {/* Section Heading */}
-      <h2 className="text-3xl font-semibold mb-8">Our Energy Management Solutions</h2>
+      <h2 className="text-3xl text-green-600 font-semibold mb-8">Our Energy Management Solutions</h2>
 
       {/* Solutions Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-4">
         {solutions.map((solution, index) => (
           <div
             key={index}
-            className="border border-[#06787A] rounded-md p-6 hover:shadow-lg transition duration-300"
+            className="border border-green-600 rounded-md p-6 hover:shadow-lg transition duration-300"
           >
             <img
               src={solution.icon}
               alt={solution.title}
               className="w-16 h-16 mx-auto mb-4"
             />
-            <p className="text-gray-700 font-medium">{solution.title}</p>
+            <p className="text-white font-medium">{solution.title}</p>
           </div>
         ))}
       </div>

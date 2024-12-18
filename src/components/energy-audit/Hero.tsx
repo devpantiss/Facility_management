@@ -2,16 +2,16 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-gray-50 flex mt-10 items-center justify-center py-16 px-4">
+    <section className="bg-black border-b-2 border-green-600 flex mt-10 items-center justify-center py-16 px-4">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Left Section */}
         <div className="text-center lg:text-left lg:max-w-xl">
-          <h1 className="text-4xl lg:text-3xl font-bold leading-tight text-gray-900 mb-4">
+          <h1 className="text-4xl lg:text-3xl font-bold leading-tight text-green-600 mb-4">
             Optimize Your Energy Cost and Asset Life Cycle with Energy Efficient
             Facility Management Solutions{" "}
             <span className="whitespace-nowrap">360° Visibility</span> of
           </h1>
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-white mb-6 leading-relaxed">
             Energy is one of the biggest costs for any infrastructure. If
             equipment maintenance and Energy audits is not done as a routine, it
             will add high maintenance costs and drastically reduce lifespan of

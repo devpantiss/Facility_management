@@ -2,7 +2,7 @@ import React from "react";
 
 const Partners: React.FC = () => {
   return (
-    <div className="flex justify-center items-center bg-teal-800 p-4">
+    <div className="flex justify-center items-center bg-black p-4">
       <div className="text-center max-w-2xl">
         {/* Badge */}
         <div className="inline-block mb-4 px-4 py-2 bg-[#1A4F63] rounded-full text-[#D0E6F1] text-sm font-semibold">

@@ -4,19 +4,19 @@ import React from "react";
 
 const IotBasedCare: React.FC = () => {
   return (
-    <section className="py-12 bg-black border-b-2 border-green-600">
+    <section className="py-12 bg-black border-b-2 border-orange-400">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         {/* Heading Section */}
-        <h2 className="text-3xl font-bold text-green-600 mb-4">
-          Safer Hospital Environment with IoT-Backed Healthcare Solutions:
+        <h2 className="text-3xl font-bold text-orange-400 mb-4">
+          Safer Public Transport Station with IoT-Backed Facility Solutions:
         </h2>
         <h3 className="text-2xl font-semibold text-white mb-6">
-          Revolutionizing Healthcare Hygiene
+          Revolutionizing Public Hygiene
         </h3>
         <p className="text-white leading-relaxed mb-12">
-          SMC India is at the forefront of infection prevention and
-          cross-contamination control. We prioritize patient & staff safety
-          through our SSDP, UVGI, and clean air solutions. SMC India is committed
+          MWF India is at the forefront of infection prevention and
+          cross-contamination control. We prioritize travellers & staff safety
+          through our SSDP, UVGI, and clean air solutions. MWF India is committed
           to revolutionizing healthcare infection & control with cutting-edge solutions.
         </p>
 

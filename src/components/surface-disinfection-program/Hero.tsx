@@ -2,15 +2,15 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-gray-50 flex mt-10 items-center justify-center py-16 px-4">
+    <section className="bg-black border-b-2 border-green-600 flex mt-10 items-center justify-center py-16 px-4">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Left Section */}
         <div className="text-center lg:text-left lg:max-w-xl">
-          <h1 className="text-4xl lg:text-3xl font-bold leading-tight text-gray-900 mb-4">
+          <h1 className="text-4xl lg:text-3xl font-bold leading-tight text-green-600 mb-4">
             Experience the difference with SSDP, a proven program delivering
             infection prevention & cross contamination control.
           </h1>
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-white mb-6 leading-relaxed">
             SMC Integrated Facility Management Solutions Limited brings a
             specialized Smart Surface Disinfection Program (SSDP) powered by
             innovative management practices & groundbreaking technology. We

@@ -49,20 +49,20 @@ const SpecializedTrainingPrograms: React.FC = () => {
   const activeContent = tabsData.find((tab) => tab.id === activeTab);
 
   return (
-    <section className="p-8 md:p-12 bg-gray-50">
+    <section className="p-8 md:p-12 bg-black">
       <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold text-gray-900">
+        <h2 className="text-4xl font-bold text-green-600">
           Specialized Training Programs
         </h2>
       </div>
 
       {/* Tabs */}
-      <div className="flex flex-wrap justify-center border-b mb-8">
+      <div className="flex flex-wrap justify-center border-b border-green-600 mb-8">
         {tabsData.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`py-2 px-4 md:px-6 text-gray-600 font-medium ${
+            className={`py-2 px-4 md:px-6 text-white font-medium ${
               activeTab === tab.id
                 ? "text-green-600 border-b-2 border-green-600"
                 : "hover:text-green-500"
@@ -77,10 +77,10 @@ const SpecializedTrainingPrograms: React.FC = () => {
       {activeContent && (
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+            <h3 className="text-2xl font-bold text-green-600 mb-4">
               {activeContent.heading}
             </h3>
-            <p className="text-gray-600">{activeContent.description}</p>
+            <p className="text-white">{activeContent.description}</p>
           </div>
           <div className="md:w-1/2">
             <img

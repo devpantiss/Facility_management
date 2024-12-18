@@ -37,11 +37,11 @@ const EnergyManagement: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F4F8FC] py-16 px-4">
+    <section className="bg-black border-b-2 border-green-600 py-16 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Heading */}
         <div className="lg:col-span-4 text-left">
-          <h2 className="text-3xl font-semibold text-black mb-4 leading-tight">
+          <h2 className="text-3xl font-semibold text-green-600 mb-4 leading-tight">
             Our Energy Management through CMMS
           </h2>
         </div>
@@ -51,14 +51,14 @@ const EnergyManagement: React.FC = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-row lg:flex-col items-start gap-4 p-6 bg-transparent border border-[#E0E8F0] rounded-lg shadow-sm"
+              className="flex flex-row lg:flex-col items-start gap-4 p-6 bg-transparent border border-green-600  rounded-lg shadow-sm"
             >
               <img
                 src={feature.icon}
                 alt={feature.title}
                 className="w-8 h-8"
               />
-              <p className="text-gray-700 font-medium">{feature.title}</p>
+              <p className="text-white font-medium">{feature.title}</p>
             </div>
           ))}
         </div>

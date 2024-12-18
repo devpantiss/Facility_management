@@ -2,16 +2,16 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative mt-24 bg-gray-50 h-[70vh] overflow-hidden py-16">
+    <section className="relative pt-24 bg-black text-white h-[70vh] overflow-hidden py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Text Content */}
           <div className="max-w-2xl">
             <p className="text-green-600 font-medium text-sm mb-4">| Payroll Software</p>
-            <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-gray-900 mb-6">
+            <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-white mb-6">
               <span className="text-green-600">Fully-Automated</span> Payroll & Compliance Software
             </h1>
-            <p className="text-gray-600 text-lg mb-8">
+            <p className="text-white text-lg mb-8">
               Automate your payroll with precision– disburse salaries, file & pay taxes, like TDS, PF, PT & ESIC from
               a single dashboard on your payroll software
             </p>

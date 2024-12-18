@@ -2,7 +2,7 @@ import React from "react";
 
 const Consultation: React.FC = () => {
   return (
-    <div className="px-10 py-6 bg-white">
+    <div className="px-10 py-6 bg-black">
       <div className="bg-gradient-to-r from-yellow-200 via-green-200 to-teal-100 rounded-lg py-12 px-6 md:px-16 lg:px-24 text-center">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800">

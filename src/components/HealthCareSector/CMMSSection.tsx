@@ -2,13 +2,13 @@ import React from "react";
 
 const CMMSSection: React.FC = () => {
   return (
-    <section className="bg-[#e7f9fe] py-12">
+    <section className="bg-black px-8 border-b-2 border-green-600 py-12">
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Heading */}
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">
+        <h1 className="text-3xl font-bold text-green-600 mb-2">
           CMMS - Computerised Maintenance Management System
         </h1>
-        <p className="text-gray-600 text-lg mb-8">
+        <p className="text-white text-lg mb-8">
           <strong className="font-semibold">
             CMMS the key to smart, proactive operation maintenance{" "}
           </strong>{" "}
@@ -66,8 +66,8 @@ export default CMMSSection;
 
 // Sub-components
 const BenefitCard = ({ title, icon }: { title: string; icon: string }) => (
-  <div className="p-6 bg-white rounded-md border-[2px] border-green-500 shadow-sm flex flex-col items-center">
+  <div className="p-6 bg-transparent rounded-md border-[2px] border-green-500 shadow-sm flex flex-col items-center">
     <img src={icon} alt={title} />
-    <p className="text-gray-700 font-medium text-center">{title}</p>
+    <p className="text-white font-medium text-center">{title}</p>
   </div>
 );

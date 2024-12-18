@@ -16,22 +16,22 @@ const cards: CardProps[] = [
 
 const OurSolutions: React.FC = () => {
   return (
-    <section className="text-center py-10 px-4 bg-white">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-800">
+    <section className="text-center py-10 px-8 bg-black border-b-2 border-green-600">
+      <h2 className="text-2xl md:text-3xl text-green-600 font-semibold mb-8">
         Our Specialized Solutions for Education Facilities
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {cards.map((card, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
+            className="flex flex-col items-center justify-center p-6 border border-green-600 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
           >
             <img
               src={card.icon}
               alt={card.title}
               className="w-16 h-16 mb-4"
             />
-            <p className="text-lg font-medium text-gray-700">{card.title}</p>
+            <p className="text-lg font-medium text-white">{card.title}</p>
           </div>
         ))}
       </div>

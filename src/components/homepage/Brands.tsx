@@ -3,10 +3,10 @@ import React from "react";
 const Brands: React.FC = () => {
 
   return (
-    <section className="bg-[#cffbff] py-12">
+    <section className="bg-black py-12">
       <div className="container mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-2xl font-semibold text-gray-800">
+        <h2 className="text-2xl font-semibold text-green-600">
           Trusted by <span className="font-bold">650+ Leading Brands</span> in
           India
         </h2>

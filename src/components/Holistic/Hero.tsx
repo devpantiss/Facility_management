@@ -6,10 +6,9 @@ const Hero: React.FC = () => {
       className="relative h-[100vh] bg-cover bg-center bg-fixed"
       style={{
         backgroundImage:
-          "url('https://purijagannathadarshan.in/wp-content/uploads/2022/12/desk.jpg')",
+          "url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734504527/shruti-singh-P25k6IWVYMI-unsplash_oiqc21.jpg')",
       }}
     >
-      {/* https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2F1721820684945_Lingaraj%20Temple%20CV%20.jpg&w=1080&q=75 */}
       {/* Rotating Sun */}
       <div className="absolute top-[150px] left-1/2 transform -translate-x-1/2 flex justify-center items-center">
         <img
@@ -25,9 +24,6 @@ const Hero: React.FC = () => {
           Elevating Temple Experiences through Comprehensive Facility Management
           Practices
         </h1>
-        <div className="bg-orange-500 px-4 py-2 rounded-full text-sm font-medium">
-          Home / 3ioSeva / Facility Management at Temples
-        </div>
       </div>
     </div>
   );

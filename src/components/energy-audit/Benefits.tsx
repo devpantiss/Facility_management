@@ -66,17 +66,17 @@ function BarChartIcon() {
 
 const Benefits: React.FC = () => {
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-black border-b-2 border-green-600">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Key Benefits</h2>
+        <h2 className="text-3xl font-bold text-green-600 text-center mb-8">Key Benefits</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center border border-yellow-400 rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition-shadow"
+              className="flex flex-col items-center text-center border border-green-400 rounded-lg p-6 bg-transparent shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="mb-4 text-yellow-500">{benefit.icon}</div>
-              <h3 className="text-lg font-semibold">{benefit.title}</h3>
+              <h3 className="text-lg text-white font-semibold">{benefit.title}</h3>
             </div>
           ))}
         </div>

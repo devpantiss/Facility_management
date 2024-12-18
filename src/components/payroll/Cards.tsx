@@ -89,19 +89,19 @@ const Cards: React.FC = () => {
   const visibleCards = showAll ? cards : cards.slice(0, 6);
 
   return (
-    <div className="bg-gray-50 py-10 px-6">
-      <h2 className="text-3xl font-bold text-center mb-8">
+    <div className="bg-black py-10 px-6">
+      <h2 className="text-3xl text-white font-bold text-center mb-8">
         India's preferred <span className="text-[#22C55E]">Payroll</span> Management Software
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {visibleCards.map((card, index) => (
           <div
             key={index}
-            className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow text-center"
+            className="p-6 bg-black ring-2 ring-[#22C55E] rounded-lg shadow-lg hover:shadow-xl transition-shadow text-center"
           >
             <div className="flex justify-center items-center">{card.icon}</div>
-            <h3 className="font-semibold text-lg mb-2">{card.title}</h3>
-            <p className="text-gray-600 text-sm">{card.description}</p>
+            <h3 className="font-semibold text-white text-lg mb-2">{card.title}</h3>
+            <p className="text-white text-sm">{card.description}</p>
           </div>
         ))}
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 
 interface BenefitItem {
   id: number;
@@ -60,12 +61,12 @@ const benefits: BenefitItem[] = [
 
 const KeyBenefits: React.FC = () => {
   return (
-    <section className="text-center p-6 md:p-12 bg-gray-50">
+    <section className="text-center p-6 md:p-12 bg-black border-b-2 border-green-600">
       {/* Section Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold mb-2">
+      <h2 className="text-3xl md:text-4xl font-semibold text-green-600 mb-2">
         Key Benefits
       </h2>
-      <p className="text-gray-600 mb-8">
+      <p className="text-white mb-8">
         Why Choose Smart Surface Disinfection Program?
       </p>
 
@@ -74,7 +75,7 @@ const KeyBenefits: React.FC = () => {
         {benefits.map((benefit) => (
           <div
             key={benefit.id}
-            className="border border-yellow-300 p-6 rounded-lg bg-yellow-50 shadow-sm hover:shadow-md transition duration-300"
+            className="border border-green-600 p-6 rounded-lg bg-traansparent shadow-sm hover:shadow-md transition duration-300"
           >
             {/* Icon */}
             <div className="flex justify-center mb-4">
@@ -85,11 +86,15 @@ const KeyBenefits: React.FC = () => {
               />
             </div>
             {/* Title */}
-            <h3 className="font-medium text-lg mb-2">{benefit.title}</h3>
+            <h3 className="font-medium text-lg text-white mb-2">{benefit.title}</h3>
             {/* Description */}
-            <ul className="text-gray-600 text-sm list-disc text-left list-inside">
+            <ul className="text-white text-sm list-disc text-left list-inside">
               {benefit.description.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index} className="flex justify-start items-center">
+                  <span className="text-green-600 mr-2 mt-2">
+                  <FaCheckCircle />
+                </span>
+                  <p>{item}</p></li>
               ))}
             </ul>
           </div>

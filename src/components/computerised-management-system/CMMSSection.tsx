@@ -33,9 +33,9 @@ const CMMSSection: React.FC = () => {
         },
     ];
   return (
-    <div className="flex flex-col items-center justify-center px-4 py-6 bg-gray-100">
+    <div className="flex flex-col items-center justify-center px-4 py-6 bg-black">
         <div>
-            <h2 className='text-4xl'>Our Computerised Maintenance Management System</h2>
+            <h2 className='text-4xl text-green-600'>Our Computerised Maintenance Management System</h2>
         </div>
         <CMMSSlider slides={slides}/>
         <div>

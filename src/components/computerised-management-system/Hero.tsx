@@ -2,16 +2,16 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-gray-50 flex mt-10 items-center justify-center py-16 px-4">
+    <section className="bg-black flex mt-10 items-center justify-center py-16 border-b-2 border-green-600 px-4">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Left Section */}
         <div className="text-center lg:text-left lg:max-w-xl">
-          <h1 className="text-4xl lg:text-3xl font-bold leading-tight text-gray-900 mb-4">
-            CMMS the Key to Smart, Proactive Operation Maintenance -{" "}
+          <h1 className="text-4xl lg:text-3xl font-bold leading-tight text-green-600 mb-4">
+            MWFMS the Key to Smart, Proactive Operation Maintenance -{" "}
             <span className="whitespace-nowrap">360° Visibility</span> of
             Operation & Maintenance System
           </h1>
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-white mb-6 leading-relaxed">
             Transition to an intelligent facility landscape with CMMS, tailored
             with digitization, aligning with the dynamic needs of both
             conventional and smart buildings.

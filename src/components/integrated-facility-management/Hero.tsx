@@ -2,22 +2,21 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-black border-b-2 border-green-600">
       <section className="max-w-6xl mx-auto px-4 py-24 flex flex-col md:flex-row items-center gap-8">
         {/* Left Section: Content */}
         <div className="flex-1">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-gray-800 leading-tight">
-            COE Served Indian Organization to wide diaspora of multifaceted
-            organizations
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-green-600 leading-tight">
+            Collection-Segregation-Disposal
           </h2>
-          <p className="text-gray-600 mb-6 leading-relaxed">
-            SMC India provides tech-enabled integrated facility management
+          <p className="text-white mb-6 leading-relaxed">
+            MWFMS India provides tech-enabled integrated facility management
             solutions and consulting through digitization, mechanization, and
             automation. As a solution-driven company, we’ve cultivated
             operational champions across diverse sectors. Our dynamic team
             comprises 35,000 skilled Facility Management Professionals,
             supported by over 100+ engineers and 200+ IHM graduates, forming the
-            core of excellence at SMC Integrated Facility Management Solutions
+            core of excellence at MWFMS Integrated Facility Management Solutions
             Limited.
           </p>
           <button className="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition duration-300">

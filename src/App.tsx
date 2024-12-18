@@ -16,6 +16,8 @@ import Religious from "./pages/Sectors/Religious";
 import Residential from "./pages/Sectors/Residential";
 import EnergyAudit from "./pages/Solutions/EnergyAudit";
 import Skilling from "./pages/Solutions/Skilling";
+import ContactPage from "./pages/ContactPage";
+import CareersPage from "./pages/CareersPage";
 
 function App() {
   return (
@@ -33,7 +35,7 @@ function App() {
             <Route path="skilling" element={<Skilling />} />
             <Route path="energy-audit" element={<EnergyAudit />} />
             <Route
-              path="integrated-facility-management"
+              path="safely-managed-sanitation"
               element={<IntegratedFacilityManagement />}
             />
             <Route
@@ -45,7 +47,7 @@ function App() {
               element={<StaffingAndPayrolling />}
             />
             <Route
-              path="smart-surface-disinfection-program"
+              path="nano-tech-cleaning-system"
               element={<SmartSurfaceDisinfectionProgram />}
             />
           </Route>
@@ -60,6 +62,9 @@ function App() {
             <Route path="religious-and-tourist-spots" element={<Religious />} />
             <Route path="residential-sector" element={<Residential />} />
           </Route>
+
+          <Route path="/contact-us" element={<ContactPage />}/>
+          <Route path="/careers" element={<CareersPage />}/>
         </Routes>
         <Footer />
       </Router>

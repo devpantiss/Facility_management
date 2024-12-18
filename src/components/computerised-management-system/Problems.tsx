@@ -48,17 +48,17 @@ const Problems: React.FC = () => {
     },
   ];
   return (
-    <div className="bg-[#006873]">
+    <div className="bg-black border-b-2 border-green-600">
       <div className="container text-white mx-auto flex flex-col lg:flex-row px-8 py-6">
         <div className="lg:w-2/5 w-full flex justify-center text-4xl items-center">
-          <p className="max-w-lg mb-4">Problems Of Traditional FM Services</p>
+          <p className="max-w-lg mb-4 text-green-600">Problems Of Traditional FM Services</p>
         </div>
         <div className="lg:w-3/5 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
             {problems.map((problem, index) => (
               <div
                 key={index}
-                className="border-[1px] p-4 border-white gap-x-6 flex md:flex-row flex-row lg:flex-col rounded-md"
+                className="border-[1px] p-4 border-green-600 gap-x-6 flex md:flex-row flex-row lg:flex-col rounded-md"
               >
                 <img src={problem.img} className="w-8" alt={problem.title} />{" "}
                 <p className="text-[12px] mt-3">{problem.title}</p>

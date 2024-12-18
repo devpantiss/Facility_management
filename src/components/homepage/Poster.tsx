@@ -2,14 +2,14 @@ import React from "react";
 
 const Poster: React.FC = () => {
   return (
-    <section className="bg-[#f8fcfc] flex flex-col justify-center items-center py-12">
+    <section className="bg-black flex flex-col justify-center items-center py-12 border-b-2 border-green-600">
       <div className="container mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800">
+          <h2 className="text-2xl lg:text-3xl font-semibold text-green-600">
             Digitize, Automate & Mechanize for a Sustainable Future
           </h2>
-          <p className="text-gray-600 mt-2">
+          <p className="text-white mt-2">
             As a problem-solving company, our award-winning technology and
             productivity framework deliver efficiency and cost savings.
           </p>
@@ -18,12 +18,12 @@ const Poster: React.FC = () => {
         {/* Cards Grid */}
         <div className="max-w-7xl">
           <div className="gap-y-4 lg:gap-x-4 flex flex-col md:flex-row">
-            <div className="ring-2 bg-white ring-blue-500 rounded-md">
+            <div className="ring-2 bg-transparent ring-green-600 rounded-md">
               <div className="p-5">
-                <h1 className="text-[18px]">
+                <h1 className="text-[18px] text-bold text-green-600">
                   Uberizing Hospital Operations with iPorter
                 </h1>
-                <p className="text-[14px]">
+                <p className="text-[14px] text-white">
                   We redefine facility management with our award-winning
                   intelligent digital portering solutions. Leveraging advanced
                   technology, we aim to minimize patient wait times, enhance
@@ -43,13 +43,13 @@ const Poster: React.FC = () => {
                 ></video>
               </div>
             </div>
-            <div className="ring-2 bg-white ring-blue-500 rounded-md">
+            <div className="ring-2 bg-transparent ring-green-600 rounded-md">
               <div className="p-5">
                 <div className="p-5">
-                  <h1 className="text-[18px]">
+                  <h1 className="text-[18px] text-green-600 font-bold">
                     Uberizing Hospital Operations with iPorter
                   </h1>
-                  <p className="text-[14px]">
+                  <p className="text-[14px] text-white">
                     We redefine facility management with our award-winning
                     intelligent digital portering solutions. Leveraging advanced
                     technology, we aim to minimize patient wait times, enhance
@@ -65,12 +65,12 @@ const Poster: React.FC = () => {
           </div>
 
 
-          <div className="ring-2 mt-4 bg-white flex flex-col lg:flex-row ring-blue-500 rounded-md">
+          <div className="ring-2 mt-4 bg-transparent flex flex-col lg:flex-row ring-green-600 rounded-md">
             <div className="p-5">
-              <h1 className="text-[18px]">
+              <h1 className="text-[18px] font-bold text-green-600">
                 Uberizing Hospital Operations with iPorter
               </h1>
-              <p className="text-[14px]">
+              <p className="text-[14px] text-white">
                 We redefine facility management with our award-winning
                 intelligent digital portering solutions. Leveraging advanced
                 technology, we aim to minimize patient wait times, enhance staff
@@ -92,12 +92,12 @@ const Poster: React.FC = () => {
           </div>
 
 
-          <div className="ring-2 mt-4 bg-white flex flex-col lg:flex-row-reverse ring-blue-500 rounded-md">
+          <div className="ring-2 mt-4 bg-transparent flex flex-col lg:flex-row-reverse ring-green-600 rounded-md">
             <div className="p-5">
-              <h1 className="text-[18px]">
+              <h1 className="text-[18px] font-bold text-green-600">
                 Uberizing Hospital Operations with iPorter
               </h1>
-              <p className="text-[14px]">
+              <p className="text-[14px] text-white">
                 We redefine facility management with our award-winning
                 intelligent digital portering solutions. Leveraging advanced
                 technology, we aim to minimize patient wait times, enhance staff

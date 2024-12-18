@@ -19,20 +19,20 @@ const JMTReport: React.FC = () => {
   const totalStrength = jmtData.reduce((sum, item) => sum + item.strength, 0);
 
   return (
-    <div className="contaoner mx-auto py-8 lg:px-12 bg-white">
+    <div className="contaoner mx-auto py-8 lg:px-12 px-8 bg-black">
       {/* Header Section */}
-      <h2 className="text-2xl font-bold mb-4">No. of JMT’s passed out</h2>
+      <h2 className="text-2xl font-bold text-green-600 mb-4">No. of JMT’s passed out</h2>
       <ul className="list-none space-y-1 mb-6">
-        <li>
+        <li className="text-green-600">
           ✅ No. of training modules:{" "}
-          <span className="font-bold">English-84, Hindi-74</span>
+          <span className="font-bold text-white">English-84, Hindi-74</span>
         </li>
-        <li>
-          ✅ No. of SOP’s created: <span className="font-bold">50+</span>
+        <li className="text-green-600">
+          ✅ No. of SOP’s created: <span className="font-bold text-white">50+</span>
         </li>
-        <li>
+        <li className="text-green-600">
           ✅ No. of Saksham candidates created with pictures:{" "}
-          <span className="font-bold">Retail-22, Healthcare-32</span>
+          <span className="font-bold text-white">Retail-22, Healthcare-32</span>
         </li>
       </ul>
 
@@ -50,7 +50,7 @@ const JMTReport: React.FC = () => {
               <th className="border border-green-700 px-4 py-2">Total</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-white">
             <tr>
               <td className="border border-green-700 px-4 py-2 font-semibold">
                 Strength during Joining
@@ -60,7 +60,7 @@ const JMTReport: React.FC = () => {
                   {item.strength}
                 </td>
               ))}
-              <td className="border border-green-700 px-4 py-2 font-bold">
+              <td className="border border-green-700 px-4 py-2 text-white font-bold">
                 {totalStrength}
               </td>
             </tr>

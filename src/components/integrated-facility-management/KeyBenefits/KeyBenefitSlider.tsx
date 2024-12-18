@@ -102,9 +102,9 @@ const KeyBenefitSlider: React.FC<SlideItemProps> = ({ slides }) => {
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="px-4 py-4">
-            <div className="relative h-[200px] border border-gray-300 bg-white p-6 flex flex-col justify-center items-center rounded-lg shadow-md">
+            <div className="relative h-[200px] border border-green-600 bg-transparent p-6 flex flex-col justify-center items-center rounded-lg shadow-md">
               <img src={slide.image} alt={slide.title} className="w-8 mb-4" />
-              <h3 className="text-lg text-center font-semibold">{slide.title}</h3>
+              <h3 className="text-lg text-white text-center font-semibold">{slide.title}</h3>
             </div>
           </div>
         ))}

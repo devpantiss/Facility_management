@@ -30,9 +30,9 @@ const KeyBenefitSection: React.FC = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center px-4 py-6 bg-gray-100">
+    <div className="flex bg-black flex-col items-center justify-center px-4 py-6">
       <div>
-        <h2 className="text-4xl">
+        <h2 className="text-4xl font-bold text-green-600">
           Our Computerised Maintenance Management System
         </h2>
       </div>

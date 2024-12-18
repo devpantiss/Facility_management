@@ -26,12 +26,12 @@ const items: Item[] = [
 
 const HowDoesItWork: React.FC = () => {
   return (
-    <section className="text-center p-6 md:p-12">
+    <section className="text-center bg-black p-6 md:p-12">
       {/* Section Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold mb-2">
+      <h2 className="text-3xl md:text-4xl text-green-600 font-semibold mb-2">
         How Does It Work?
       </h2>
-      <p className="text-gray-600 mb-8">
+      <p className="text-white mb-8">
         Transitioning from Conventional Cleaning Methods involving Mops and
         Buckets to the Mechanized Smart Cleaning approach.
       </p>
@@ -47,7 +47,7 @@ const HowDoesItWork: React.FC = () => {
                 className="w-full h-52"
               />
             </div>
-            <h3 className="mt-4 font-medium text-lg">{item.subtitle}</h3>
+            <h3 className="mt-4 font-medium text-white text-lg">{item.subtitle}</h3>
           </div>
         ))}
       </div>

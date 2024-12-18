@@ -3,7 +3,7 @@ import React from "react";
 const InnovativeSolutions: React.FC = () => {
   return (
     <div
-      className="bg-contain bg-center"
+      className="bg-contain bg-black bg-center"
       style={{
         backgroundImage:
           "url('https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/residential-bg.png?fit=1526%2C758&ssl=1')",
@@ -11,10 +11,10 @@ const InnovativeSolutions: React.FC = () => {
     >
       <div className="container mx-auto flex flex-col justify-center items-center">
         <div className="max-w-2xl flex flex-col justify-center items-center">
-          <h1 className="max-w-lg py-6 text-4xl text-center font-bold">
+          <h1 className="max-w-lg py-6 text-4xl text-green-600 text-center font-bold">
             Redefining Facility Management for Residential Spaces
           </h1>
-          <p className="max-w-lg text-center mb-4">
+          <p className="max-w-lg text-center text-white mb-4">
             The way residential complexes are managed defines their residents’
             experience and the property’s long-term value. Facility Management
             in a residential facility is not just limited to cleaning,
@@ -22,7 +22,7 @@ const InnovativeSolutions: React.FC = () => {
             solutions like pest control, clubhouse management, technology-backed
             energy management, and optimization, to name a few.
           </p>
-          <p className="max-w-lg text-center">
+          <p className="max-w-lg text-white text-center">
             At SMC Integrated Facility Management Solutions Limited, we
             transform the living spaces by Professional Club House and
             Facilities Solutions, App-Based Home Repair and Maintenance

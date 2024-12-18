@@ -33,10 +33,10 @@ const challenges = [
 
 const Challenges: React.FC = () => {
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
+        <h2 className="text-center text-3xl font-bold text-green-600 mb-8">
           We understand the challenges of healthcare facilities
         </h2>
 
