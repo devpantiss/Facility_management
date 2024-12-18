@@ -13,7 +13,6 @@ import { FaBus } from "react-icons/fa6";
 import { GiOpenBook } from "react-icons/gi";
 import { PiBuildingApartmentFill } from "react-icons/pi";
 
-
 const Header: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -113,7 +112,7 @@ const Header: React.FC = () => {
                       alt="Facility Management"
                       className="w-12 h-12"
                     /> */}
-                    <GiVacuumCleaner className="text-green-600 text-[44px]"/>
+                    <GiVacuumCleaner className="text-green-600 text-[44px]" />
                     <span className="text-center text-white text-[14px]">
                       Safely Managed Sanitation{" "}
                     </span>
@@ -127,7 +126,7 @@ const Header: React.FC = () => {
                       alt="Learning"
                       className="w-12 h-12"
                     /> */}
-                    <FaGraduationCap className="text-green-600 text-[44px]"/>
+                    <FaGraduationCap className="text-green-600 text-[44px]" />
                     <span className="text-center text-white text-[14px]">
                       NSQF-Industry Linked Skilling{" "}
                     </span>
@@ -156,8 +155,10 @@ const Header: React.FC = () => {
                       alt="SMC"
                       className="w-12 h-12"
                     /> */}
-                    <MdHealthAndSafety className="text-green-600 text-[44px]"/>
-                    <span className="text-center text-white text-[14px]">Healthcare</span>
+                    <MdHealthAndSafety className="text-green-600 text-[44px]" />
+                    <span className="text-center text-white text-[14px]">
+                      Healthcare
+                    </span>
                   </li>
                 </Link>
 
@@ -168,8 +169,10 @@ const Header: React.FC = () => {
                       alt="SIS"
                       className="w-12 h-12"
                     /> */}
-                    <GiByzantinTemple className="text-green-600 text-[44px]"/>
-                    <span className="text-center text-white text-[14px]">Temples</span>
+                    <GiByzantinTemple className="text-green-600 text-[44px]" />
+                    <span className="text-center text-white text-[14px]">
+                      Temples
+                    </span>
                   </li>
                 </Link>
 
@@ -180,8 +183,10 @@ const Header: React.FC = () => {
                       alt="center"
                       className="w-12 h-12"
                     /> */}
-                    <FaBus className="text-green-600 text-[44px]"/>
-                    <span className="text-center text-white text-[14px]">Public Transport</span>
+                    <FaBus className="text-green-600 text-[44px]" />
+                    <span className="text-center text-white text-[14px]">
+                      Public Transport
+                    </span>
                   </li>
                 </Link>
 
@@ -192,8 +197,10 @@ const Header: React.FC = () => {
                       alt="Learning"
                       className="w-12 h-12"
                     /> */}
-                    <GiOpenBook className="text-green-600 text-[44px]"/>
-                    <span className="text-center text-white text-[14px]">Educational</span>
+                    <GiOpenBook className="text-green-600 text-[44px]" />
+                    <span className="text-center text-white text-[14px]">
+                      Educational
+                    </span>
                   </li>
                 </Link>
 
@@ -204,8 +211,10 @@ const Header: React.FC = () => {
                       alt="Learning"
                       className="w-12 h-12"
                     /> */}
-                    <PiBuildingApartmentFill className="text-green-600 text-[44px]"/>
-                    <span className="text-center text-white text-[14px]">Residential</span>
+                    <PiBuildingApartmentFill className="text-green-600 text-[44px]" />
+                    <span className="text-center text-white text-[14px]">
+                      Residential
+                    </span>
                   </li>
                 </Link>
               </ul>
@@ -224,30 +233,53 @@ const Header: React.FC = () => {
           {activeDropdown === "company" && (
             <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-black/90 ring-2 ring-green-600 shadow-lg rounded-md z-50">
               <ul className="p-4 grid grid-cols-3 gap-4">
-                <li className="flex items-center flex-col hover:text-green-600">
-                  <img
-                    src="https://pantiss.com/wp-content/uploads/2022/08/logo.png"
-                    alt="SMC"
-                    className="h-10 w-full mb-2"
-                  />
-                  <span className="text-center text-white text-[14px]">Pantiss</span>
-                </li>
-                <li className="flex items-center flex-col hover:text-green-600">
-                  <img
-                    src="https://mowash.in/Images/mo-wash-logo.svg"
-                    alt="SIS"
-                    className="w-full h-10 mb-2"
-                  />
-                  <span className="text-center text-white text-[14px]">MoWash</span>
-                </li>
-                <li className="flex items-center flex-col hover:text-green-600">
-                  <img
-                    src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/centre-of-excellence.png?fit=100%2C100&ssl=1"
-                    alt="center"
-                    className="w-12 h-12"
-                  />
-                  <span className="text-center text-white text-[14px]">Centre Of Excellence</span>
-                </li>
+                <a
+                  href="https://pantiss-official-client.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <li className="flex items-center flex-col hover:text-green-600">
+                    <img
+                      src="https://pantiss.com/wp-content/uploads/2022/08/logo.png"
+                      alt="SMC"
+                      className="h-10 w-full mb-2"
+                    />
+                    <span className="text-center text-white text-[14px]">
+                      Pantiss
+                    </span>
+                  </li>
+                </a>
+
+                <a
+                 href="https://admin.mowash.in/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                >
+                  <li className="flex items-center flex-col hover:text-green-600">
+                    <img
+                      src="https://mowash.in/Images/mo-wash-logo.svg"
+                      alt="SIS"
+                      className="w-full h-10 mb-2"
+                    />
+                    <span className="text-center text-white text-[14px]">
+                      MoWash
+                    </span>
+                  </li>
+                </a>
+
+                <Link to="/"
+                >
+                  <li className="flex items-center flex-col hover:text-green-600">
+                    <img
+                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/centre-of-excellence.png?fit=100%2C100&ssl=1"
+                      alt="center"
+                      className="w-12 h-12"
+                    />
+                    <span className="text-center text-white text-[14px]">
+                      Centre Of Excellence
+                    </span>
+                  </li>
+                </Link>
               </ul>
             </div>
           )}
