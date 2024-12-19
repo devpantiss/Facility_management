@@ -4,6 +4,7 @@ import Challenges from '../../components/EducationSector/Challenges'
 import InnovativeSolutions from '../../components/EducationSector/InnovativeSolutions'
 import OurSolutions from '../../components/EducationSector/OurSolutions'
 import Testimonials from '../../components/EducationSector/Testimonials'
+import Clients from '../../components/EducationSector/Clients'
 
 const Educational: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Educational: React.FC = () => {
       <InnovativeSolutions />
       <OurSolutions />
       <Testimonials />
+      <Clients />
     </div>
   )
 }

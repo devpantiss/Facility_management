@@ -4,6 +4,7 @@ import Challenges from '../../components/ResidentialSector/Challenges'
 import InnovativeSolutions from '../../components/ResidentialSector/InnovativeSolutions'
 import Consultation from '../../components/homepage/Consultation'
 import Testimonials from '../../components/ResidentialSector/Testimonials'
+import Clients from '../../components/ResidentialSector/Clients'
 
 const Residential: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Residential: React.FC = () => {
       <InnovativeSolutions />
       <Consultation />
       <Testimonials />
+      <Clients />
     </div>
   )
 }
