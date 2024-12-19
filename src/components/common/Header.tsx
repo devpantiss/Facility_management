@@ -26,13 +26,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-black text-white mx-auto flex justify-between items-center shadow-md fixed top-0 w-full z-50 px-12 py-4">
+    <header className="bg-black text-white mx-auto flex justify-between items-center shadow-md fixed top-0 w-full z-50 px-12 py-2">
       {/* Logo */}
       <div className="flex items-center">
         <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_450,h_220/v1734589246/MWF__1_-removebg-preview_fwn5zr.png"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_600,h_300/v1734596616/MWF__4_-removebg-preview_ls1iys.png"
           alt="Logo"
-          className="h-20"
+          className="h-32"
         />
       </div>
 

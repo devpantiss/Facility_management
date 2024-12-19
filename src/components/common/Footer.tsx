@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_450,h_220/v1734589246/MWF__1_-removebg-preview_fwn5zr.png"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_600,h_300/v1734596616/MWF__4_-removebg-preview_ls1iys.png"
               className="w-44"
             />
             <p className="text-sm">
