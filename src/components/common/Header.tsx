@@ -32,7 +32,7 @@ const Header: React.FC = () => {
         <img
           src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_600,h_300/v1734596616/MWF__4_-removebg-preview_ls1iys.png"
           alt="Logo"
-          className="h-32"
+          className="lg:h-32 h-20"
         />
       </div>
 
