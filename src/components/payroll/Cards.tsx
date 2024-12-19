@@ -60,13 +60,13 @@ const Cards: React.FC = () => {
     {
       title: "Contractor Payments",
       description:
-        "You pay your contractual employees via RazorpayX Payroll, and we file and pay the associated TDS.",
+        "You pay your contractual employees via MoWashX Payroll, and we file and pay the associated TDS.",
       icon: <FaHandshake className="text-[#22C55E] text-4xl mb-4" />,
     },
     {
       title: "Bulk Wizard",
       description:
-        "Save time and execute additions, deductions, and loss of pay in one fell swoop with RazorpayX Payroll Bulk Wizard.",
+        "Save time and execute additions, deductions, and loss of pay in one fell swoop with MoWashX Payroll Bulk Wizard.",
       icon: <FaTasks className="text-[#22C55E] text-4xl mb-4" />,
     },
     {
@@ -78,7 +78,7 @@ const Cards: React.FC = () => {
     {
       title: "Powerful Integrations",
       description:
-        "Plug RazorpayX Payroll with your HRMS, or choose from our integrations: Zoho People, Zaggle, Plum, etc.",
+        "Plug MoWashX Payroll with your HRMS, or choose from our integrations: Zoho People, Zaggle, Plum, etc.",
       icon: <FaPlug className="text-[#22C55E] text-4xl mb-4" />,
     },
   ];

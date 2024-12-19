@@ -26,7 +26,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-black text-white mx-auto flex justify-between items-center shadow-md fixed top-0 w-full z-50 px-12 py-2">
+    <header className="bg-black text-white mx-auto flex justify-between items-center shadow-md fixed top-0 w-full z-50 px-12">
       {/* Logo */}
       <div className="flex items-center">
         <img
@@ -320,7 +320,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg z-50 flex flex-col p-6 overflow-y-auto">
+        <div className="fixed lg:hidden top-0 right-0 w-3/4 h-full bg-black shadow-lg z-50 flex flex-col p-6 overflow-y-auto">
           <button
             onClick={toggleMobileMenu}
             className="self-end text-white hover:text-green-600 focus:outline-none mb-6"

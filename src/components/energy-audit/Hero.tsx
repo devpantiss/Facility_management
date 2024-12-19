@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
             Energy is one of the biggest costs for any infrastructure. If
             equipment maintenance and Energy audits is not done as a routine, it
             will add high maintenance costs and drastically reduce lifespan of
-            the system. IOT-backed Energy Audits and CMMS enabled Maintenance
+            the system. IOT-backed Energy Audits and MWFMS enabled Maintenance
             Programmes to ensure over 20% reduction in your energy and
             maintenance cost.
           </p>

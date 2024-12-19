@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
             infection prevention & cross contamination control.
           </h1>
           <p className="text-white mb-6 leading-relaxed">
-            SMC Integrated Facility Management Solutions Limited brings a
+            MFM Integrated Facility Management Solutions Limited brings a
             specialized Smart Surface Disinfection Program (SSDP) powered by
             innovative management practices & groundbreaking technology. We
             substitute the traditional mop and bucket approach with intelligent

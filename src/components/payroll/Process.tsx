@@ -6,7 +6,7 @@ const Process: React.FC = () => {
   return (
     <section className="bg-black py-12 px-6 flex flex-col justify-center items-center">
       <h1 className="text-3xl text-white font-semibold mb-8 max-w-2xl text-center">
-        A Payroll system that does more thn just{" "}
+        A Payroll system that does more than just{" "}
         <span className="text-[#22C55E]">processing salaries</span>
       </h1>
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
@@ -34,7 +34,7 @@ const Process: React.FC = () => {
           {/* Description */}
           <p className="text-white mb-4">
             Calculate & transfer accurate salaries, directly to the payees’ bank
-            accounts with RazorpayX Payroll Software.
+            accounts with MoWashX Payroll Software.
           </p>
 
           {/* Bullet Points */}
@@ -148,7 +148,7 @@ const Process: React.FC = () => {
           </h3>
           {/* Description */}
           <p className="text-white mb-4">
-            Do more than just processing salaries with RazorpayX Payroll
+            Do more than just processing salaries with MoWashX Payroll
             Software. We offer features that have you covered for everything
             between hire and exit.
           </p>

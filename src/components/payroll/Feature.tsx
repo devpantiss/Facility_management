@@ -24,7 +24,7 @@ const features: Feature[] = [
     icon: <FaClock size={48} className="text-green-600"/>, // 1-Hour Onboarding Icon
     title: "1-Hour Onboarding",
     description:
-      "Getting started with RazorpayX Payroll is incredibly quick and easy thanks to a seamless plug and play design.",
+      "Getting started with MoWashX Payroll is incredibly quick and easy thanks to a seamless plug and play design.",
   },
 ];
 
