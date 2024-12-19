@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <img
-              src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/smc-logo-full-white.png?w=318&ssl=1"
+              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_450,h_220/v1734589246/MWF__1_-removebg-preview_fwn5zr.png"
               className="w-44"
             />
             <p className="text-sm">

@@ -30,9 +30,9 @@ const Header: React.FC = () => {
       {/* Logo */}
       <div className="flex items-center">
         <img
-          src="https://i0.wp.com/smc-india.com/wp-content/uploads/2024/03/SMC-Logoweb.png?fit=500%2C265&ssl=1"
+          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_450,h_220/v1734589246/MWF__1_-removebg-preview_fwn5zr.png"
           alt="Logo"
-          className="h-10"
+          className="h-20"
         />
       </div>
 
