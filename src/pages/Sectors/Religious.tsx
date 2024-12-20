@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from '../../components/Holistic/Hero'
-import TagLine from '../../components/Holistic/TagLine'
-import TempleManagement from '../../components/Holistic/TempleManagenent'
-import Testimonials from '../../components/Holistic/Testimonials'
+import Hero from '../../components/Sectors/Holistic/Hero'
+import TagLine from '../../components/Sectors/Holistic/TagLine'
+import TempleManagement from '../../components/Sectors/Holistic/TempleManagenent'
+import Testimonials from '../../components/Sectors/Holistic/Testimonials'
 
 const Religious:React.FC = () => {
   return (

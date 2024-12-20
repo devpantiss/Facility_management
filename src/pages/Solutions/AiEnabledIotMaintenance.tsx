@@ -1,9 +1,9 @@
 import React from 'react'
-import Hero from '../../components/computerised-management-system/Hero'
-import Description from '../../components/computerised-management-system/Description'
-import Problems from '../../components/computerised-management-system/Problems'
-import KeyBenefits from '../../components/computerised-management-system/KeyBenefits'
-import CMMSSection from '../../components/computerised-management-system/CMMSSection'
+import Hero from '../../components/Solutions/computerised-management-system/Hero'
+import Description from '../../components/Solutions/computerised-management-system/Description'
+import Problems from '../../components/Solutions/computerised-management-system/Problems'
+import KeyBenefits from '../../components/Solutions/computerised-management-system/KeyBenefits'
+import CMMSSection from '../../components/Solutions/computerised-management-system/CMMSSection'
 import Consultation from '../../components/homepage/Consultation'
 
 const ComputerisedManagementSystem: React.FC = () => {

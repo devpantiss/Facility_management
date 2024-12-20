@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from '../../components/surface-disinfection-program/Hero'
-import HowDoesItWork from '../../components/surface-disinfection-program/HowDoesItWork'
-import KeyBenefits from '../../components/surface-disinfection-program/KeyBenefits'
-import Tabs from '../../components/surface-disinfection-program/Tabs'
+import Hero from '../../components/Solutions/surface-disinfection-program/Hero'
+import HowDoesItWork from '../../components/Solutions/surface-disinfection-program/HowDoesItWork'
+import KeyBenefits from '../../components/Solutions/surface-disinfection-program/KeyBenefits'
+import Tabs from '../../components/Solutions/surface-disinfection-program/Tabs'
 import Consultation from '../../components/homepage/Consultation'
 
 const SmartSurfaceDisinfectionProgram: React.FC= () => {
