@@ -4,11 +4,13 @@ import Poster from '../components/homepage/Poster'
 import Brands from '../components/homepage/Brands'
 import Impact from '../components/homepage/Impact'
 import Consultation from '../components/homepage/Consultation'
+// import PhoneOutline from '../components/common/PhoneOutline'
 
 const HomePage: React.FC = () => {
   return (
     <div>
         <HeroSection />
+        {/* <PhoneOutline /> */}
         <Poster />
         <Brands />
         <Impact />

@@ -20,15 +20,15 @@ const Impact: React.FC = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="relative z-10 flex flex-col lg:flex-row mx-auto px-6 py-16">
         <div className="lg:w-1/2 w-full flex flex-col justify-center items-center text-center text-white">
-          <img src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/12/smc-logo-white.png?fit=248%2C81&ssl=1" alt="piv"/>
+          <img src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_600,h_300/v1734596616/MWF__4_-removebg-preview_ls1iys.png" alt="piv"/>
           <p className='text-[12px] text-left'>Leading the way in Facility Excellence</p>
           <p className="text-lg text-left mt-4">Pioneering Sustainable Facility Solutions for a Better Tomorrow</p>
         </div>
         <div className="lg:w-1/2 w-full mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-          <StatCard value="303" label="Industry-Leading Technology Partners" />
-          <StatCard value="30" label="Branch Offices" />
-          <StatCard value="35k+" label="Employees" />
-          <StatCard value="650" label="Clients" />
+          <StatCard value="12" label="Industry-Leading Technology Partners" />
+          <StatCard value="6" label="Branch Offices" />
+          <StatCard value="800+" label="Employees" />
+          <StatCard value="45+" label="Clients" />
         </div>
       </div>
     </section>
