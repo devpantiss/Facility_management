@@ -83,7 +83,7 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      color: "green",
+      color: "yellow",
       borderRadius: "50%",
       width: "40px",
       height: "40px",
@@ -95,7 +95,7 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
       cursor: "pointer",
     }}
   >
-    <FaChevronRight className="text-green-600 text-[44px]" />
+    <FaChevronRight className="text-yellow-600 text-[44px]" />
   </div>
 );
 
@@ -118,7 +118,7 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
       cursor: "pointer",
     }}
   >
-    <FaChevronLeft className="text-green-600 text-[44px]" />
+    <FaChevronLeft className="text-yellow-600 text-[44px]" />
   </div>
 );
 
@@ -147,17 +147,17 @@ const Testimonials: React.FC = () => {
 
 
   return (
-    <div className="py-10 bg-black border-t-2 border-green-600">
-      <h2 className="text-3xl font-bold text-center mb-6 text-green-600">
+    <div className="py-10 bg-black border-t-2 border-yellow-600">
+      <h2 className="text-3xl font-bold text-center mb-6 text-yellow-600">
         What Our Clients Say
       </h2>
       <div className="max-w-4xl mx-auto">
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="p-6">
-              <div className="relative bg-transparent p-8 ring-2 ring-green-600 rounded-lg shadow-md flex flex-col justify-center items-center text-center">
+              <div className="relative bg-transparent p-8 ring-2 ring-yellow-600 rounded-lg shadow-md flex flex-col justify-center items-center text-center">
                 {/* Testimonial Text */}
-                <p className="text-lg text-green-600 font-medium mb-8">
+                <p className="text-lg text-yellow-600 font-medium mb-8">
                   "{testimonial.text}"
                 </p>
 

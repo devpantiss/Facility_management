@@ -1,4 +1,5 @@
 import React from "react";
+import PhoneSection from "../../common/PhoneSection";
 
 const InnovativeSolutions: React.FC = () => {
   return (
@@ -31,11 +32,12 @@ const InnovativeSolutions: React.FC = () => {
             and Professionally Managed Society Maintenance.
           </p>
         </div>
-        <div>
-          <img
+        <div className="w-full mt-6">
+          {/* <img
             src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/residential-2nd-img.gif?fit=524%2C557&ssl=1"
             alt="img"
-          />
+          /> */}
+          <PhoneSection />
         </div>
       </div>
     </div>

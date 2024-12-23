@@ -3,7 +3,7 @@ import Hero from '../../components/Sectors/HealthCareSector/Hero'
 import Challenges from '../../components/Sectors/HealthCareSector/Challenges'
 import IotBasedCare from '../../components/Sectors/HealthCareSector/IotBasedCare'
 import SpecializedSolution from '../../components/Sectors/HealthCareSector/SpecializedSolution'
-import PorterSection from '../../components/Sectors/HealthCareSector/PorterSection'
+// import PorterSection from '../../components/Sectors/HealthCareSector/PorterSection'
 import IQMSSection from '../../components/Sectors/HealthCareSector/IQMSSection'
 import SSDPSection from '../../components/Sectors/HealthCareSector/SSDPSection'
 import CMMSSection from '../../components/Sectors/HealthCareSector/CMMSSection'
@@ -16,7 +16,7 @@ const HealthCare:React.FC = () => {
       <Challenges />
       <IotBasedCare />
       <SpecializedSolution />
-      <PorterSection />
+      {/* <PorterSection /> */}
       <IQMSSection />
       <SSDPSection />
       <CMMSSection />

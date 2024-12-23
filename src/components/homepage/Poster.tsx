@@ -38,7 +38,7 @@ const Poster: React.FC = () => {
         {/* Section Heading */}
         <div className="mb-12">
           <h2 className="text-2xl lg:text-3xl font-semibold text-green-600">
-            Digitize, Automate & Mechanize for a Sustainable Future
+            Streamline, Innovate & Optimize for Superior Facility Management{" "}
           </h2>
           <p className="text-white mt-2">
             As a problem-solving company, our award-winning technology and

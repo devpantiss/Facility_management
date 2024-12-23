@@ -41,12 +41,12 @@ const Footer: React.FC = () => {
               className="w-44"
             />
             <p className="text-sm">
-              Plot No.18, 3rd Floor, DDA Community Center, Okhla Industrial
-              Area, Phase-I, New Delhi – 110020
+              Plot No 1215/1500, Khandagiri Bari, Bank of India Lane,
+              Bhubaneswar, Odisha, 751030
             </p>
             <p className="text-xs mt-2">
-              © 2024 SMC Integrated Facility Management Solutions Limited, an
-              SIS Group Enterprises. All Rights Reserved.
+              © 2024 MFM Integrated Facility Management Solutions Limited, an
+              MoWash Foundation Enterprises. All Rights Reserved.
             </p>
             <div className="flex gap-3 mt-4">
               <a
@@ -84,14 +84,15 @@ const Footer: React.FC = () => {
           <div>
             <h2 className="text-lg font-semibold mb-4">Our Solutions</h2>
             <ul className="space-y-2 text-sm">
-              <li>Computerised Maintenance Management System</li>
+              <li>Plumbing</li>
+              <li>Electrical Repair</li>
+              <li>Landscaping</li>
+              <li>AI Enabled IoT Maintenance System</li>
               <li>Energy Audit & Maintenance</li>
-              <li>Indoor Air Quality</li>
-              <li>Ultraviolet Germicidal Irradiation</li>
-              <li>Uberizing Hospital Operation</li>
-              <li>Next Generation Disinfection System</li>
-              <li>Smart Surface Disinfection Program – H.K 2.0</li>
-              <li>Integrated Facility Management</li>
+              <li>Staffing & Payrolling</li>
+              <li>Nano-Tech Cleaning System</li>
+              <li>Safely Managed Sanitation</li>
+              <li>NSQF-Industry Linked Skilling</li>
             </ul>
           </div>
 
@@ -102,10 +103,9 @@ const Footer: React.FC = () => {
             </h2>
             <ul className="space-y-2 text-sm">
               <li>Healthcare</li>
-              <li>Manufacturing</li>
-              <li>Pharma</li>
-              <li>Retail</li>
-              <li>Education</li>
+              <li>Temples</li>
+              <li>Public Transport</li>
+              <li>Educational</li>
               <li>Residential</li>
             </ul>
           </div>
@@ -115,28 +115,33 @@ const Footer: React.FC = () => {
             <h2 className="text-lg font-semibold mb-4">More Information</h2>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/contact-us" className="hover:underline">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  About SMC India
+                <a
+                  href="https://www.pantiss.com"
+                  className="hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  About Pantiss
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  About SIS Group
+                <a
+                  href="https://admin.mowash.in"
+                  className="hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  About MoWash
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/careers" className="hover:underline">
                   Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Blog
                 </a>
               </li>
             </ul>

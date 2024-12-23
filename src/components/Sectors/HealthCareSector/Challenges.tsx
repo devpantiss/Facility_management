@@ -7,7 +7,7 @@ const challenges = [
   {
     id: 1,
     title: 'Infection Prevention and Cross Contamination Control (HAIs)',
-    image: "https://i0.wp.com/smc-india.com/wp-content/uploads/2023/12/healthcare-challenges-3.jpg?fit=819%2C638&ssl=1",
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734782652/national-cancer-institute-eR5-JoSw1Mo-unsplash_zoszbp.jpg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const challenges = [
   {
     id: 3,
     title: 'Financial Challenges, Productivity Regulations and Standards',
-    image: "https://i0.wp.com/smc-india.com/wp-content/uploads/2023/12/healthcare-challenges-2.jpg?fit=819%2C546&ssl=1",
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734783511/linkedin-sales-solutions-0QvTyp0gH3A-unsplash_umqckc.jpg",
   },
   {
     id: 4,
@@ -27,7 +27,7 @@ const challenges = [
   {
     id: 5,
     title: 'Sustainability & Healthier Environment',
-    image: "https://i0.wp.com/smc-india.com/wp-content/uploads/2023/12/healthcare-challenges-5-1.jpg?fit=538%2C545&ssl=1",
+    image: "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734784303/owen-beard-DK8jXx1B-1c-unsplash_znfbzf.jpg",
   },
 ];
 

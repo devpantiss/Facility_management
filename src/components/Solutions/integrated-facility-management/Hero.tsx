@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-black border-b-2 border-green-600">
+    <div className="bg-black border-b-2 border-green-600 pt-24">
       <section className="max-w-6xl mx-auto px-4 py-24 flex flex-col md:flex-row items-center gap-8">
         {/* Left Section: Content */}
         <div className="flex-1">
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
         {/* Right Section: Video */}
         <div className="flex-1 relative">
           <div className="w-full h-72 md:h-full overflow-hidden rounded-lg">
-            <video
+            {/* <video
               className="w-full h-full object-cover"
               loop
               autoPlay
@@ -39,7 +39,8 @@ const Hero: React.FC = () => {
                 type="video/mp4"
               />
               Your browser does not support the video tag.
-            </video>
+            </video> */}
+            <img src="https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734778348/Untitled_design__9_-removebg-preview_p7uckc.png"/>
           </div>
         </div>
       </section>

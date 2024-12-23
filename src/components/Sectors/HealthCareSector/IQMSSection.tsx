@@ -1,4 +1,5 @@
 import React from "react";
+import SingleLaptopSection from "../../common/SingleLaptopSection";
 
 const IQMSSection: React.FC = () => {
   return (
@@ -24,7 +25,7 @@ const IQMSSection: React.FC = () => {
         {/* Mobile with Video Section */}
         <div className="relative mx-auto w-full flex justify-center items-center max-w-4xl">
           {/* Mobile Video */}
-          <div className="relative z-10 rounded-xl overflow-hidden">
+          {/* <div className="relative z-10 rounded-xl overflow-hidden">
             <video className="w-[700px] h-full" autoPlay muted loop>
               <source
                 src="https://ik.imagekit.io/grnoesre9/iqms%203.webm?updatedAt=1701768420106"
@@ -32,7 +33,8 @@ const IQMSSection: React.FC = () => {
               />
               Your browser does not support the video tag.
             </video>
-          </div>
+          </div> */}
+          <SingleLaptopSection />
         </div>
 
         {/* Benefits Section */}

@@ -1,4 +1,5 @@
 import React from "react";
+import PhoneSection from "../../common/PhoneSection";
 
 const InnovativeSolutions: React.FC = () => {
   return (
@@ -26,8 +27,9 @@ const InnovativeSolutions: React.FC = () => {
             between the parents, school, and students.
           </p>
         </div>
-        <div>
-            <img src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/12/prism-2.gif?fit=524%2C557&ssl=1" alt="img"/>
+        <div className="mt-6 w-full">
+            <PhoneSection />
+            {/* <img src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/12/prism-2.gif?fit=524%2C557&ssl=1" alt="img"/> */}
         </div>
       </div>
     </div>

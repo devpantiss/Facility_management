@@ -12,6 +12,9 @@ import { GiByzantinTemple } from "react-icons/gi";
 import { FaBus } from "react-icons/fa6";
 import { GiOpenBook } from "react-icons/gi";
 import { PiBuildingApartmentFill } from "react-icons/pi";
+import { MdOutlinePlumbing } from "react-icons/md";
+import { MdElectricalServices } from "react-icons/md";
+import { GiHighGrass } from "react-icons/gi";
 
 const Header: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -48,14 +51,36 @@ const Header: React.FC = () => {
           </button>
           {activeDropdown === "solutions" && (
             <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] bg-black/90 ring-2 ring-green-600 shadow-lg rounded-md z-50">
-              <ul className="p-4 grid grid-cols-3 gap-4">
+              <ul className="p-4 grid grid-cols-4 gap-4">
                 <Link to="/solutions/ai-anabled-iot-management-system">
                   <li className="flex items-center hover:text-green-600 flex-col">
-                    {/* <img
-                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/computerized.png?fit=100%2C100&ssl=1"
-                      alt="AIMMS"
-                      className="w-12 h-12"
-                    /> */}
+                    <MdOutlinePlumbing className="text-green-600 text-[44px]" />
+                    <span className="text-center text-white text-[14px]">
+                      Plumbing{" "}
+                    </span>
+                  </li>
+                </Link>
+
+                <Link to="/solutions/ai-anabled-iot-management-system">
+                  <li className="flex items-center hover:text-green-600 flex-col">
+                    <MdElectricalServices className="text-green-600 text-[44px]" />
+                    <span className="text-center text-white text-[14px]">
+                      Electrical Repairs{" "}
+                    </span>
+                  </li>
+                </Link>
+
+                <Link to="/solutions/ai-anabled-iot-management-system">
+                  <li className="flex items-center hover:text-green-600 flex-col">
+                    <GiHighGrass className="text-green-600 text-[44px]" />
+                    <span className="text-center text-white text-[14px]">
+                      Landscaping{" "}
+                    </span>
+                  </li>
+                </Link>
+
+                <Link to="/solutions/ai-anabled-iot-management-system">
+                  <li className="flex items-center hover:text-green-600 flex-col">
                     <GrCloudComputer className="text-green-600 text-[44px]" />
                     <span className="text-center text-white text-[14px]">
                       AI-enabled IoT Maintenance System{" "}
@@ -65,11 +90,6 @@ const Header: React.FC = () => {
 
                 <Link to="/solutions/energy-audit">
                   <li className="flex items-center hover:text-green-600 flex-col">
-                    {/* <img
-                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/Indoor-air-quality.png?fit=100%2C100&ssl=1"
-                      alt="IAQ"
-                      className="w-12 h-12"
-                    /> */}
                     <SlEnergy className="text-green-600 text-[44px]" />
                     <span className="text-center text-white text-[14px]">
                       Energy Audit & Maintenance{" "}
@@ -79,11 +99,6 @@ const Header: React.FC = () => {
 
                 <Link to="/solutions/staffing-and-payrolling">
                   <li className="flex items-center hover:text-green-600 flex-col">
-                    {/* <img
-                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/hospital-operations.png?fit=100%2C100&ssl=1"
-                      alt="Hospital Operations"
-                      className="w-12 h-12"
-                    /> */}
                     <FaPeopleGroup className="text-green-600 text-[44px]" />
                     <span className="text-center text-white text-[14px]">
                       Staffing & Payrolling{" "}
@@ -93,11 +108,6 @@ const Header: React.FC = () => {
 
                 <Link to="/solutions/nano-tech-cleaning-system">
                   <li className="flex items-center hover:text-green-600 flex-col">
-                    {/* <img
-                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/next-gen-disinfection.png?fit=100%2C100&ssl=1"
-                      alt="Surface Disinfection"
-                      className="w-12 h-12"
-                    /> */}
                     <RiReactjsLine className="text-green-600 text-[44px]" />
                     <span className="text-center text-white text-[14px]">
                       Nano-Tech Cleaning System{" "}
@@ -107,11 +117,6 @@ const Header: React.FC = () => {
 
                 <Link to="/solutions/safely-managed-sanitation">
                   <li className="flex items-center hover:text-green-600 flex-col">
-                    {/* <img
-                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/Ultraviolet.png?fit=100%2C100&ssl=1"
-                      alt="Facility Management"
-                      className="w-12 h-12"
-                    /> */}
                     <GiVacuumCleaner className="text-green-600 text-[44px]" />
                     <span className="text-center text-white text-[14px]">
                       Safely Managed Sanitation{" "}
@@ -121,11 +126,6 @@ const Header: React.FC = () => {
 
                 <Link to="/solutions/skilling">
                   <li className="flex items-center hover:text-green-600 flex-col">
-                    {/* <img
-                      src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/LD.png?fit=100%2C100&ssl=1"
-                      alt="Learning"
-                      className="w-12 h-12"
-                    /> */}
                     <FaGraduationCap className="text-green-600 text-[44px]" />
                     <span className="text-center text-white text-[14px]">
                       NSQF-Industry Linked Skilling{" "}
@@ -234,7 +234,7 @@ const Header: React.FC = () => {
             <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-black/90 ring-2 ring-green-600 shadow-lg rounded-md z-50">
               <ul className="p-4 grid grid-cols-3 gap-4">
                 <a
-                  href="https://pantiss-official-client.vercel.app/"
+                  href="https://www.pantiss.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -242,7 +242,7 @@ const Header: React.FC = () => {
                     <img
                       src="https://pantiss.com/wp-content/uploads/2022/08/logo.png"
                       alt="SMC"
-                      className="h-10 w-full mb-2"
+                      className="h-full w-36 mb-2"
                     />
                     <span className="text-center text-white text-[14px]">
                       Pantiss
@@ -251,9 +251,9 @@ const Header: React.FC = () => {
                 </a>
 
                 <a
-                 href="https://admin.mowash.in/"
-                 target="_blank"
-                 rel="noopener noreferrer"
+                  href="https://admin.mowash.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <li className="flex items-center flex-col hover:text-green-600">
                     <img
@@ -267,8 +267,7 @@ const Header: React.FC = () => {
                   </li>
                 </a>
 
-                <Link to="/"
-                >
+                <Link to="/">
                   <li className="flex items-center flex-col hover:text-green-600">
                     <img
                       src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/centre-of-excellence.png?fit=100%2C100&ssl=1"

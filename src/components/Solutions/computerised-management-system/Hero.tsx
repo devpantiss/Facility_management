@@ -1,8 +1,9 @@
 import React from "react";
+import LaptopSection from "../../common/LaptopSection";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-black flex mt-10 items-center justify-center py-16 border-b-2 border-green-600 px-4">
+    <section className="bg-black flex pt-32 items-center justify-center py-16 border-b-2 border-green-600 px-4">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Left Section */}
         <div className="text-center lg:text-left lg:max-w-xl">
@@ -25,11 +26,12 @@ const Hero: React.FC = () => {
         <div className="relative mt-12 lg:mt-0 w-full lg:w-1/2 flex justify-center">
           {/* Laptop Image */}
           <div className="relative w-full">
-            <img
+            <LaptopSection />
+            {/* <img
               src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/card-3-1.png?w=879&ssl=1"
               alt="Laptop Dashboard"
               className="w-full h-auto drop-shadow-lg"
-            />
+            /> */}
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import LaptopSection from "../../common/LaptopSection";
 
 const CMMSSection: React.FC = () => {
   return (
@@ -6,11 +7,11 @@ const CMMSSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Heading */}
         <h1 className="text-3xl font-bold text-green-600 mb-2">
-          CMMS - Computerised Maintenance Management System
+          MWFMS - MoWash Facility Maintenance System
         </h1>
         <p className="text-white text-lg mb-8">
           <strong className="font-semibold">
-            CMMS the key to smart, proactive operation maintenance{" "}
+            MWFMS the key to smart, proactive operation maintenance{" "}
           </strong>{" "}
           – 360° visibility of operation & maintenance system
         </p>
@@ -23,7 +24,7 @@ const CMMSSection: React.FC = () => {
         {/* Mobile with Video Section */}
         <div className="relative mx-auto w-full flex justify-center items-center max-w-4xl">
           {/* Mobile Video */}
-          <div className="relative z-10 rounded-xl overflow-hidden">
+          {/* <div className="relative z-10 rounded-xl overflow-hidden">
             <video className="w-[700px] h-full" autoPlay muted loop>
               <source
                 src="https://ik.imagekit.io/grnoesre9/cmms%203.webm?updatedAt=1701849244581"
@@ -31,7 +32,8 @@ const CMMSSection: React.FC = () => {
               />
               Your browser does not support the video tag.
             </video>
-          </div>
+          </div> */}
+          <LaptopSection />
         </div>
 
         {/* Benefits Section */}

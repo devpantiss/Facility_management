@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="bg-black pt-24 text-gray-800 p-6 md:pt-24 md:p-12">
+    <div className="bg-black pt-24 text-gray-800 p-6 md:pt-32 md:p-12">
       {/* Top Section: Get in Touch, Address, Job Application, Social Media */}
       <section className="container mx-auto text-white grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         {/* Contact Info */}

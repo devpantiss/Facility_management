@@ -3,35 +3,27 @@ import React, { useState } from "react";
 const tabsData = [
   {
     id: "adhyapan",
-    title: "ADHYAPAN",
-    heading: "ADHYAPAN – Train the Trainer Program",
+    title: "SANITATION",
+    heading: "MoWash – Train the Trainer Program",
     description:
-      "To train the trainers on how to deliver the sessions effectively, TNI, evaluation techniques, Maintaining Quality Standards at sites & learn about Adult Learning Principles.",
+      "To train the trainers on how to deliver the sessions effectively, TNI, evaluation techniques, Maintaining Quality Standards at sites & learn about Adult Learning Principles in the field of Sanitation.",
     image: "https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/train-the-trainer.jpg?w=1024&ssl=1", // Replace with actual image link
   },
   {
     id: "saksham",
-    title: "SAKSHAM",
-    heading: "SAKSHAM V2.0 – Creating Champions in Retail & Healthcare",
+    title: "ELECTRICIAN",
+    heading: "Electrician Training",
     description:
-      "The word ‘SAKSHAM’ means ‘to be capable’ – ATMANIRBHAR. We are aligned with our country’s new policy of ATMANIRBHAR BHARAT. To prepare the SME’s who shall be able to do site setup in their respective domains.",
+      "Electrician Training to make our workforce a certified force of professional.",
     image: "https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/SAKSHAM.jpg?w=1024&ssl=1", // Replace with actual image link
   },
   {
     id: "parakh",
-    title: "PARAKH",
-    heading: "PARAKH – TNI & Assessment",
+    title: "PLUMBING",
+    heading: "Plumbers Training",
     description:
       "With the Aim to Analyse the Training  & Development needs and ensure that employees are learning. We have started with the evaluation of staff at Premium sites. This shall help us analyse the gaps in training and shall create scope of improvement.",
     image: "https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/assessment.jpg?w=1024&ssl=1", // Replace with actual image link
-  },
-  {
-    id: "trainingChamp",
-    title: "Training Champ Program",
-    heading: "Training Champ – Championing Workforce Skills",
-    description:
-      "An incentive-based program where supervisors are groomed and promoted as Training Champ, and they conduct regular on-the-job training & development sessions for the housekeeping staff at the unit level.",
-    image: "https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/training-champ.jpg?w=1024&ssl=1", // Replace with actual image link
   },
   {
     id: "fireSafety",
