@@ -16,7 +16,7 @@ const StatCard: React.FC<StatCardProps> = ({ value, label }) => {
 
 const Impact: React.FC = () => {
   return (
-    <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('https://i0.wp.com/smc-india.com/wp-content/uploads/2023/12/stats-home-page.jpg?fit=1443%2C557&ssl=1')` }}>
+    <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('https://res.cloudinary.com/dgtc2fvgu/image/upload/v1735052215/birk-enwald-NflTMg1oOW8-unsplash_geqjck.jpg')` }}>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="relative z-10 flex flex-col lg:flex-row mx-auto px-6 py-16">
         <div className="lg:w-1/2 w-full flex flex-col justify-center items-center text-center text-white">
