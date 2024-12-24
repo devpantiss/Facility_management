@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           </p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Managing over{" "}
-            <span className="text-orange-400">30 Thousand ft²</span> area
+            <span className={`${isSpecialPath ? "text-orange-400" : "text-yellow-400"}`}>30 Thousand ft²</span> area
             operations
           </h1>
           <p className="text-lg md:text-xl font-medium mt-4">
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           </p>
         </div>
         {/* Line Separator */}
-        <div className="mt-8 mx-auto max-w-4xl border-t border-orange-400" />
+        <div className={`mt-8 mx-auto max-w-4xl border-t ${isSpecialPath ? "border-orange-400" : "border-yellow-400"}`} />
       </div>
 
       <div className="container mx-auto px-4 py-8">
