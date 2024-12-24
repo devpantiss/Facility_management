@@ -43,6 +43,11 @@ const Header: React.FC = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    setActiveDropdown(null);
+  };
+
+
   return (
     <header className="bg-black text-white mx-auto flex justify-between items-center shadow-md fixed top-0 w-full z-50 px-12">
       {/* Logo */}
@@ -67,7 +72,7 @@ const Header: React.FC = () => {
               className={`absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] bg-black/90 ring-2 ${ring} shadow-lg rounded-md z-50`}
             >
               <ul className="p-4 grid grid-cols-4 gap-4">
-                <Link to="/solutions/plumbing">
+                <Link to="/solutions/plumbing" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center ${hoverColorClass} flex-col`}
                   >
@@ -80,7 +85,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/solutions/electrical-repair">
+                <Link to="/solutions/electrical-repair" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -93,7 +98,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/solutions/landscaping">
+                <Link to="/solutions/landscaping" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -106,7 +111,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/solutions/ai-anabled-iot-management-system">
+                <Link to="/solutions/ai-anabled-iot-management-system" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -119,7 +124,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/solutions/energy-audit">
+                <Link to="/solutions/energy-audit" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -130,7 +135,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/solutions/staffing-and-payrolling">
+                <Link to="/solutions/staffing-and-payrolling" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -143,7 +148,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/solutions/nano-tech-cleaning-system">
+                <Link to="/solutions/nano-tech-cleaning-system" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -156,7 +161,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/solutions/safely-managed-sanitation">
+                <Link to="/solutions/safely-managed-sanitation" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -169,7 +174,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/solutions/skilling">
+                <Link to="/solutions/skilling" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -199,7 +204,7 @@ const Header: React.FC = () => {
               className={`absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-black/90 ring-2 ${ring} shadow-lg rounded-md z-50`}
             >
               <ul className="p-4 grid grid-cols-5 gap-4">
-                <Link to="/sectors/healthcare-sector">
+                <Link to="/sectors/healthcare-sector" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -217,7 +222,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/sectors/religious-and-tourist-spots">
+                <Link to="/sectors/religious-and-tourist-spots" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -235,7 +240,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/sectors/public-transport-hub">
+                <Link to="/sectors/public-transport-hub" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -251,7 +256,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/sectors/educational-sector">
+                <Link to="/sectors/educational-sector" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -267,7 +272,7 @@ const Header: React.FC = () => {
                   </li>
                 </Link>
 
-                <Link to="/sectors/residential-sector">
+                <Link to="/sectors/residential-sector" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
@@ -306,6 +311,7 @@ const Header: React.FC = () => {
                   href="https://www.pantiss.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handleLinkClick}
                 >
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
@@ -325,6 +331,7 @@ const Header: React.FC = () => {
                   href="https://admin.mowash.in/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handleLinkClick}
                 >
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
@@ -340,7 +347,7 @@ const Header: React.FC = () => {
                   </li>
                 </a>
 
-                <Link to="/">
+                <Link to="/" onClick={handleLinkClick}>
                   <li
                     className={`flex items-center flex-col ${hoverColorClass}`}
                   >
