@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Text Content */}
-      <div className="absolute top-[75%] left-1/2 transform -translate-x-1/2 flex flex-col justify-center items-center text-white text-center px-4">
+      <div className="absolute top-[75%] lg:left-1/2 lg:transform lg:-translate-x-1/2 flex flex-col justify-center items-center text-white text-center px-4">
         <h1 className="text-3xl md:text-4xl max-w-4xl font-bold mb-4">
           Elevating Temple Experiences through Comprehensive Facility Management
           Practices
