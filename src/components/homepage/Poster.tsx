@@ -10,7 +10,7 @@ const Poster: React.FC = () => {
       icon: <PiPipeLight className="text-green-600 text-5xl mb-4" />,
       title: "PLUMBING",
       description:
-        "We provide reliable plumbing services with skilled professionals and advanced tools, ensuring efficient water flow, timely repairs, and sustainable solutions. Our expertise guarantees minimal disruptions and optimized system performance for homes and businesses alike.",
+        "Reliable plumbing services for efficient water flow and timely repairs.",
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734770616/Untitled_design_5_u9iyea.png",
     },
@@ -18,7 +18,7 @@ const Poster: React.FC = () => {
       icon: <GiVacuumCleaner className="text-green-600 text-5xl mb-4" />,
       title: "SAFELY MANAGED SANITATION",
       description:
-        "We deliver innovative sanitation services, ensuring efficient waste collection, precise segregation, and eco-friendly disposal. Our sustainable approach minimizes environmental impact, enhances cleanliness, and promotes community health, combining advanced technology with best practices for a cleaner, greener future.",
+        "Innovative sanitation solutions for waste collection and eco-friendly disposal.",
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734772377/Untitled_design_7_naovrb.png",
     },
@@ -26,7 +26,7 @@ const Poster: React.FC = () => {
       icon: <FaPlug className="text-green-600 text-5xl mb-4" />,
       title: "ELECTRICIAN",
       description:
-        "We provide reliable electrical services, offering safe installation, maintenance, and repair solutions. Our skilled team ensures optimal performance of electrical systems, prioritizing safety and efficiency. With advanced technology and expert service, we enhance reliability and minimize downtime for a seamless experience.",
+        "Safe electrical installation, maintenance, and repair for optimal performance.",
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734770616/Untitled_design_4_zzfu5e.png",
     },
@@ -34,7 +34,7 @@ const Poster: React.FC = () => {
       icon: <GiHighGrass className="text-green-600 text-5xl mb-4" />,
       title: "LANDSCAPING",
       description:
-        "Our landscaping services transform outdoor spaces through expert design, maintenance, and sustainable practices. From planting to irrigation and regular upkeep, we enhance the beauty and functionality of your surroundings, creating healthy, vibrant environments that promote well-being and ecological balance.",
+        "Transforming outdoor spaces with expert design and sustainable maintenance.",
       image:
         "https://res.cloudinary.com/dgtc2fvgu/image/upload/v1734770616/Untitled_design_6_msx3a6.png",
     },
@@ -63,7 +63,7 @@ const Poster: React.FC = () => {
               style={{ backgroundImage: `url(${service.image})` }}
             >
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-80 group-hover:bg-opacity-70 transition-all duration-300 ease-in-out"></div>
+              <div className="absolute inset-0 bg-black bg-opacity-80 group-hover:bg-opacity-10 transition-all duration-300 ease-in-out"></div>
 
               {/* Icon and Title on Hover */}
               <div className="absolute top-0 left-0 right-0 p-6 flex flex-col items-center justify-center transform group-hover:translate-y-[-100%] transition-all duration-300 ease-in-out">
