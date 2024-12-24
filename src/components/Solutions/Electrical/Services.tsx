@@ -59,7 +59,7 @@ const Services: React.FC = () => {
               style={{ backgroundImage: `url(${service.image})` }}
             >
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-70 transition-all duration-300 ease-in-out"></div>
+              <div className="absolute inset-0 bg-black bg-opacity-80 group-hover:bg-opacity-70 transition-all duration-300 ease-in-out"></div>
 
               {/* Icon and Title on Hover */}
               <div className="absolute top-0 left-0 right-0 p-6 flex flex-col items-center justify-center transform group-hover:translate-y-[-100%] transition-all duration-300 ease-in-out">
