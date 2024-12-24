@@ -1,9 +1,20 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
+
 
 const Footer: React.FC = () => {
+
+  const location = useLocation();
+  const isSpecialPath =
+    location.pathname === "/sectors/religious-and-tourist-spots" ||
+    location.pathname === "/sectors/public-transport-hub";
+    const logoSrc = isSpecialPath
+    ? "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_600,h_290/v1735019328/2-removebg-preview_lap3um.png"
+    : "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_600,h_290/v1734596616/MWF__4_-removebg-preview_ls1iys.png";
+
   return (
-    <footer className="bg-teal-800 text-white">
-      <div className="relative bg-teal-800 text-white py-12 px-6 md:px-16 lg:px-24">
+    <footer className={`${isSpecialPath ? "bg-orange-800" : "bg-teal-800"} text-white`}>
+      <div className="relative text-white py-12 px-6 md:px-16 lg:px-24">
         {/* Map Section */}
         {/* <div className="absolute inset-y-0 right-0 w-2/5">
           <img
@@ -21,7 +32,7 @@ const Footer: React.FC = () => {
           </p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Managing over{" "}
-            <span className="text-yellow-400">30 Thousand ft²</span> area
+            <span className="text-orange-400">30 Thousand ft²</span> area
             operations
           </h1>
           <p className="text-lg md:text-xl font-medium mt-4">
@@ -29,7 +40,7 @@ const Footer: React.FC = () => {
           </p>
         </div>
         {/* Line Separator */}
-        <div className="mt-8 mx-auto max-w-4xl border-t border-yellow-400" />
+        <div className="mt-8 mx-auto max-w-4xl border-t border-orange-400" />
       </div>
 
       <div className="container mx-auto px-4 py-8">
@@ -37,7 +48,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <img
-              src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_600,h_300/v1734596616/MWF__4_-removebg-preview_ls1iys.png"
+              src={logoSrc}
               className="w-44"
             />
             <p className="text-sm">
@@ -150,7 +161,7 @@ const Footer: React.FC = () => {
         <div className="text-center mt-8">
           <a
             href="#"
-            className="bg-yellow-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-yellow-600"
+            className="bg-orange-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-orange-600"
           >
             WE’RE HIRING!
           </a>

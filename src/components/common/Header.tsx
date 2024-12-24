@@ -24,6 +24,7 @@ const Header: React.FC = () => {
   const isSpecialPath =
     location.pathname === "/sectors/religious-and-tourist-spots" ||
     location.pathname === "/sectors/public-transport-hub";
+    
   const activeColorClass = isSpecialPath ? "text-yellow-600" : "text-green-600";
   const hoverColorClass = isSpecialPath
     ? "hover:text-yellow-600"
