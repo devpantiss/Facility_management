@@ -122,14 +122,14 @@ const TempleManagement: React.FC = () => {
           <div className="mb-4">
             <h2 className="text-2xl text-yellow-600 font-bold">{section.title}</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {section.sections.map((item, idx) => (
               <div key={idx} className="bg-transparent ring-2 ring-yellow-600 rounded-md shadow-lg p-4 text-white">
                 <div className="flex flex-col items-center mb-4">
                   <div className="text-yellow-500 text-6xl mb-4">{item.icon}</div>
-                  <h3 className="text-lg font-bold text-yellow-600">{item.subtitle}</h3>
+                  <h3 className="text-lg text-center font-bold text-yellow-600">{item.subtitle}</h3>
                 </div>
-                <p className="text-gray-300">{item.content}</p>
+                <p className="text-gray-300 text-center">{item.content}</p>
               </div>
             ))}
           </div>

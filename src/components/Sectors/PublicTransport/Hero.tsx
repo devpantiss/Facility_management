@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           delivering smooth journeys every day.
         </p>
 
-        <button className="px-4 py-2 bg-green-600 rounded-md hover:bg-green-700 transition duration-300">
+        <button className="px-4 py-2 bg-yellow-600 rounded-md hover:bg-yellow-700 transition duration-300">
           Explore Our Services
         </button>
       </div>

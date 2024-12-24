@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { GrCloudComputer } from "react-icons/gr";
 import { SlEnergy } from "react-icons/sl";
 import { FaPeopleGroup } from "react-icons/fa6";
@@ -20,6 +20,21 @@ const Header: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const location = useLocation();
+  const isSpecialPath =
+    location.pathname === "/sectors/religious-and-tourist-spots" ||
+    location.pathname === "/sectors/public-transport-hub";
+  const activeColorClass = isSpecialPath ? "text-yellow-600" : "text-green-600";
+  const hoverColorClass = isSpecialPath
+    ? "hover:text-yellow-600"
+    : "hover:text-green-600";
+
+  const ring = isSpecialPath ? "ring-yellow-600" : "ring-green-600";
+
+  const logoSrc = isSpecialPath
+    ? "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_600,h_290/v1735019328/2-removebg-preview_lap3um.png"
+    : "https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_600,h_290/v1734596616/MWF__4_-removebg-preview_ls1iys.png";
+
   const toggleDropdown = (menu: string) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
   };
@@ -32,11 +47,9 @@ const Header: React.FC = () => {
     <header className="bg-black text-white mx-auto flex justify-between items-center shadow-md fixed top-0 w-full z-50 px-12">
       {/* Logo */}
       <div className="flex items-center">
-        <img
-          src="https://res.cloudinary.com/dgtc2fvgu/image/upload/c_crop,w_600,h_300/v1734596616/MWF__4_-removebg-preview_ls1iys.png"
-          alt="Logo"
-          className="lg:h-32 h-20"
-        />
+        <Link to="/">
+          <img src={logoSrc} alt="Logo" className="lg:h-32 h-20" />
+        </Link>
       </div>
 
       {/* Desktop Navigation Menu */}
@@ -45,34 +58,48 @@ const Header: React.FC = () => {
         <div className="relative">
           <button
             onClick={() => toggleDropdown("solutions")}
-            className="flex items-center text-white hover:text-green-600 font-medium"
+            className={`flex items-center text-white ${hoverColorClass} font-medium`}
           >
             Solutions <FaChevronDown className="ml-1" />
           </button>
           {activeDropdown === "solutions" && (
-            <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] bg-black/90 ring-2 ring-green-600 shadow-lg rounded-md z-50">
+            <div
+              className={`absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] bg-black/90 ring-2 ${ring} shadow-lg rounded-md z-50`}
+            >
               <ul className="p-4 grid grid-cols-4 gap-4">
-                <Link to="/solutions/ai-anabled-iot-management-system">
-                  <li className="flex items-center hover:text-green-600 flex-col">
-                    <MdOutlinePlumbing className="text-green-600 text-[44px]" />
+                <Link to="/solutions/plumbing">
+                  <li
+                    className={`flex items-center ${hoverColorClass} flex-col`}
+                  >
+                    <MdOutlinePlumbing
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       Plumbing{" "}
                     </span>
                   </li>
                 </Link>
 
-                <Link to="/solutions/ai-anabled-iot-management-system">
-                  <li className="flex items-center hover:text-green-600 flex-col">
-                    <MdElectricalServices className="text-green-600 text-[44px]" />
+                <Link to="/solutions/electrical-repair">
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
+                    <MdElectricalServices
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       Electrical Repairs{" "}
                     </span>
                   </li>
                 </Link>
 
-                <Link to="/solutions/ai-anabled-iot-management-system">
-                  <li className="flex items-center hover:text-green-600 flex-col">
-                    <GiHighGrass className="text-green-600 text-[44px]" />
+                <Link to="/solutions/landscaping">
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
+                    <GiHighGrass
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       Landscaping{" "}
                     </span>
@@ -80,8 +107,12 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link to="/solutions/ai-anabled-iot-management-system">
-                  <li className="flex items-center hover:text-green-600 flex-col">
-                    <GrCloudComputer className="text-green-600 text-[44px]" />
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
+                    <GrCloudComputer
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       AI-enabled IoT Maintenance System{" "}
                     </span>
@@ -89,8 +120,10 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link to="/solutions/energy-audit">
-                  <li className="flex items-center hover:text-green-600 flex-col">
-                    <SlEnergy className="text-green-600 text-[44px]" />
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
+                    <SlEnergy className={`${activeColorClass} text-[44px]`} />
                     <span className="text-center text-white text-[14px]">
                       Energy Audit & Maintenance{" "}
                     </span>
@@ -98,8 +131,12 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link to="/solutions/staffing-and-payrolling">
-                  <li className="flex items-center hover:text-green-600 flex-col">
-                    <FaPeopleGroup className="text-green-600 text-[44px]" />
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
+                    <FaPeopleGroup
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       Staffing & Payrolling{" "}
                     </span>
@@ -107,8 +144,12 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link to="/solutions/nano-tech-cleaning-system">
-                  <li className="flex items-center hover:text-green-600 flex-col">
-                    <RiReactjsLine className="text-green-600 text-[44px]" />
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
+                    <RiReactjsLine
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       Nano-Tech Cleaning System{" "}
                     </span>
@@ -116,8 +157,12 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link to="/solutions/safely-managed-sanitation">
-                  <li className="flex items-center hover:text-green-600 flex-col">
-                    <GiVacuumCleaner className="text-green-600 text-[44px]" />
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
+                    <GiVacuumCleaner
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       Safely Managed Sanitation{" "}
                     </span>
@@ -125,8 +170,12 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link to="/solutions/skilling">
-                  <li className="flex items-center hover:text-green-600 flex-col">
-                    <FaGraduationCap className="text-green-600 text-[44px]" />
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
+                    <FaGraduationCap
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       NSQF-Industry Linked Skilling{" "}
                     </span>
@@ -141,21 +190,27 @@ const Header: React.FC = () => {
         <div className="relative">
           <button
             onClick={() => toggleDropdown("sector")}
-            className="flex items-center text-white hover:text-green-600 font-medium"
+            className={`flex items-center text-white ${hoverColorClass} font-medium`}
           >
             Sectors <FaChevronDown className="ml-1" />
           </button>
           {activeDropdown === "sector" && (
-            <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-black/90 ring-2 ring-green-600 shadow-lg rounded-md z-50">
+            <div
+              className={`absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-black/90 ring-2 ${ring} shadow-lg rounded-md z-50`}
+            >
               <ul className="p-4 grid grid-cols-5 gap-4">
                 <Link to="/sectors/healthcare-sector">
-                  <li className="flex items-center flex-col hover:text-green-600">
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
                     {/* <img
                       src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/healthcare.png?fit=100%2C100&ssl=1"
                       alt="SMC"
                       className="w-12 h-12"
                     /> */}
-                    <MdHealthAndSafety className="text-green-600 text-[44px]" />
+                    <MdHealthAndSafety
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       Healthcare
                     </span>
@@ -163,13 +218,17 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link to="/sectors/religious-and-tourist-spots">
-                  <li className="flex items-center flex-col hover:text-green-600">
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
                     {/* <img
                       src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/manufacturing-1.png?fit=100%2C100&ssl=1"
                       alt="SIS"
                       className="w-12 h-12"
                     /> */}
-                    <GiByzantinTemple className="text-green-600 text-[44px]" />
+                    <GiByzantinTemple
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       Temples
                     </span>
@@ -177,13 +236,15 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link to="/sectors/public-transport-hub">
-                  <li className="flex items-center flex-col hover:text-green-600">
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
                     {/* <img
                       src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/retail.png?fit=100%2C100&ssl=1"
                       alt="center"
                       className="w-12 h-12"
                     /> */}
-                    <FaBus className="text-green-600 text-[44px]" />
+                    <FaBus className={`${activeColorClass} text-[44px]`} />
                     <span className="text-center text-white text-[14px]">
                       Public Transport
                     </span>
@@ -191,13 +252,15 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link to="/sectors/educational-sector">
-                  <li className="flex items-center flex-col hover:text-green-600">
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
                     {/* <img
                       src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/09/education.png?fit=100%2C100&ssl=1"
                       alt="Learning"
                       className="w-12 h-12"
                     /> */}
-                    <GiOpenBook className="text-green-600 text-[44px]" />
+                    <GiOpenBook className={`${activeColorClass} text-[44px]`} />
                     <span className="text-center text-white text-[14px]">
                       Educational
                     </span>
@@ -205,13 +268,17 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link to="/sectors/residential-sector">
-                  <li className="flex items-center flex-col hover:text-green-600">
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
                     {/* <img
                       src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/residential.png?fit=100%2C100&ssl=1"
                       alt="Learning"
                       className="w-12 h-12"
                     /> */}
-                    <PiBuildingApartmentFill className="text-green-600 text-[44px]" />
+                    <PiBuildingApartmentFill
+                      className={`${activeColorClass} text-[44px]`}
+                    />
                     <span className="text-center text-white text-[14px]">
                       Residential
                     </span>
@@ -226,19 +293,23 @@ const Header: React.FC = () => {
         <div className="relative">
           <button
             onClick={() => toggleDropdown("company")}
-            className="flex items-center text-white hover:text-green-600 font-medium"
+            className={`flex items-center text-white ${hoverColorClass} font-medium`}
           >
             Company <FaChevronDown className="ml-1" />
           </button>
           {activeDropdown === "company" && (
-            <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-black/90 ring-2 ring-green-600 shadow-lg rounded-md z-50">
+            <div
+              className={`absolute top-[50px] left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-black/90 ring-2 ${ring} shadow-lg rounded-md z-50`}
+            >
               <ul className="p-4 grid grid-cols-3 gap-4">
                 <a
                   href="https://www.pantiss.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <li className="flex items-center flex-col hover:text-green-600">
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
                     <img
                       src="https://pantiss.com/wp-content/uploads/2022/08/logo.png"
                       alt="SMC"
@@ -255,7 +326,9 @@ const Header: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <li className="flex items-center flex-col hover:text-green-600">
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
                     <img
                       src="https://mowash.in/Images/mo-wash-logo.svg"
                       alt="SIS"
@@ -268,7 +341,9 @@ const Header: React.FC = () => {
                 </a>
 
                 <Link to="/">
-                  <li className="flex items-center flex-col hover:text-green-600">
+                  <li
+                    className={`flex items-center flex-col ${hoverColorClass}`}
+                  >
                     <img
                       src="https://i0.wp.com/smc-india.com/wp-content/uploads/2023/10/centre-of-excellence.png?fit=100%2C100&ssl=1"
                       alt="center"
@@ -287,13 +362,13 @@ const Header: React.FC = () => {
         {/* Static Links */}
         <a
           href="/careers"
-          className="text-white hover:text-green-600 font-medium"
+          className={`text-white ${hoverColorClass} font-medium`}
         >
           Careers
         </a>
         <a
           href="/contact-us"
-          className="text-white hover:text-green-600 font-medium"
+          className={`text-white ${hoverColorClass} font-medium`}
         >
           Contact Us
         </a>
@@ -301,7 +376,7 @@ const Header: React.FC = () => {
         {/* Free Assessment Button */}
         <a
           href="/free-assessment"
-          className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700"
+          className={`px-4 py-2 ${activeColorClass} bg-white rounded-md ${hoverColorClass}`}
         >
           Free Assessment
         </a>

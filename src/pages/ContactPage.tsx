@@ -1,4 +1,6 @@
 import React from "react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 
 const ContactPage: React.FC = () => {
   return (
@@ -10,18 +12,17 @@ const ContactPage: React.FC = () => {
           <h3 className="font-semibold text-lg text-green-600 mb-2">Get in touch</h3>
           <p className="text-sm">📞 Phone</p>
           <p className="text-sm">
-            011-49491234 | +91 8076464444 | 918076465555
+            06743588734 | +91 7894252842
           </p>
           <p className="mt-2 text-sm">✉️ Email</p>
-          <p className="text-sm">CONTACT@smc-india.com</p>
+          <p className="text-sm">facilities@mowash.in</p>
         </div>
 
         {/* Address */}
         <div className="border p-4 rounded-lg shadow-sm">
           <h3 className="font-semibold text-lg text-green-600 mb-2">Address</h3>
           <p className="text-sm">
-            📍 Plot No.18, 3rd Floor, DDA Community Center, Okhla Industrial
-            Area, Phase-I, New Delhi - 110020
+            📍 Plot No. 1215/1500, Bank of India site road, Khandagiri Bari, Bhubaneswar, Khordha, Odisha (751030)
           </p>
         </div>
 
@@ -36,22 +37,38 @@ const ContactPage: React.FC = () => {
 
           {/* Social Media */}
           <div className="border p-4 rounded-lg shadow-sm">
-            <h3 className="font-semibold text-green-600 text-lg mb-2">Social media</h3>
-            <div className="flex space-x-4">
-              <a href="#" aria-label="Facebook" className="text-gray-700">
-                📘
-              </a>
-              <a href="#" aria-label="Twitter" className="text-gray-700">
-                🐦
-              </a>
-              <a href="#" aria-label="Instagram" className="text-gray-700">
-                📸
-              </a>
-              <a href="#" aria-label="LinkedIn" className="text-gray-700">
-                🔗
-              </a>
-            </div>
-          </div>
+      <h3 className="font-semibold text-green-600 text-lg mb-2">Social Media</h3>
+      <div className="flex space-x-4">
+        <a
+          href="#"
+          aria-label="Facebook"
+          className="text-green-600 hover:text-blue-600"
+        >
+          <FaFacebook size={24} />
+        </a>
+        <a
+          href="#"
+          aria-label="Instagram"
+          className="text-green-600 hover:text-pink-500"
+        >
+          <FaInstagram size={24} />
+        </a>
+        <a
+          href="#"
+          aria-label="LinkedIn"
+          className="text-green-600 hover:text-blue-700"
+        >
+          <FaLinkedin size={24} />
+        </a>
+        <a
+          href="#"
+          aria-label="Twitter (X)"
+          className="text-green-600 hover:text-sky-500"
+        >
+          <FaTwitter size={24} />
+        </a>
+      </div>
+    </div>
         </div>
       </section>
 

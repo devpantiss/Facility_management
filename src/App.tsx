@@ -18,6 +18,9 @@ import EnergyAudit from "./pages/Solutions/EnergyAudit";
 import Skilling from "./pages/Solutions/Skilling";
 import ContactPage from "./pages/ContactPage";
 import CareersPage from "./pages/CareersPage";
+import Plumbing from "./pages/Solutions/Plumbing";
+import ElectricalRepair from "./pages/Solutions/ElectricalRepair";
+import LandScaping from "./pages/Solutions/LandScaping";
 
 function App() {
   return (
@@ -31,6 +34,10 @@ function App() {
               path="ai-anabled-iot-management-system"
               element={<ComputerisedManagementSystem />}
             />
+            <Route path="indoor-air-quality" element={<IndoorAirQuality />} />
+            <Route path="plumbing" element={<Plumbing />} />
+            <Route path="electrical-repair" element={<ElectricalRepair />} />
+            <Route path="landscaping" element={<LandScaping />} />
             <Route path="indoor-air-quality" element={<IndoorAirQuality />} />
             <Route path="skilling" element={<Skilling />} />
             <Route path="energy-audit" element={<EnergyAudit />} />

@@ -21,11 +21,11 @@ const Footer: React.FC = () => {
           </p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Managing over{" "}
-            <span className="text-yellow-400">170 million ft²</span> area
+            <span className="text-yellow-400">30 Thousand ft²</span> area
             operations
           </h1>
           <p className="text-lg md:text-xl font-medium mt-4">
-            Across 303 districts in India for 6 key nation builder sectors
+            Across 7 districts in Odisha for 4 key nation builder sectors
           </p>
         </div>
         {/* Line Separator */}
